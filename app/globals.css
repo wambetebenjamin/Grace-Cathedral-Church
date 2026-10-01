@@ -8,13 +8,25 @@ html {
 }
 
 body {
-  @apply overflow-x-clip bg-white text-slate-700 antialiased;
+  @apply overflow-x-clip text-slate-700 antialiased;
+  background: #fbfbfe;
+}
+
+/* A small visual system that keeps every section feeling intentional and current. */
+section {
+  position: relative;
+}
+
+section:nth-of-type(even) {
+  background-image: radial-gradient(circle at 85% 12%, rgba(129, 146, 255, .10), transparent 26rem);
 }
 
 ::selection {
-  background: rgba(39, 76, 107, 0.18);
-  color: #16293b;
+  background: rgba(246, 107, 79, 0.25);
+  color: #171b42;
 }
+
+
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -35,26 +47,31 @@ body {
 
   /* Light button for dark sections */
   .btn-gold {
-    @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-white px-8 py-3.5 text-sm font-black uppercase tracking-wide text-royal-800 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-royal-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2.5 rounded-xl bg-white px-8 py-3.5 text-sm font-black uppercase tracking-wide text-royal-800 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-royal-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 active:translate-y-0;
   }
 
   /* Outline button over dark imagery */
   .btn-outline-light {
-    @apply inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-white/70 px-8 py-3 text-sm font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-gold-400 hover:text-gold-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2.5 rounded-xl border-2 border-white/70 px-8 py-3 text-sm font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-gold-400 hover:text-gold-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:translate-y-0;
   }
 
   /* Solid navy button */
   .btn-purple {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-royal-700 px-6 py-3 text-sm font-bold text-white shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-royal-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal-500 focus-visible:ring-offset-2 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-royal-700 px-6 py-3 text-sm font-bold text-white shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-royal-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal-500 focus-visible:ring-offset-2 active:translate-y-0;
   }
 
   /* Outlined royal button */
   .btn-outline-royal {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-royal-700/30 px-6 py-2.5 text-sm font-bold text-royal-800 transition-all duration-300 hover:-translate-y-0.5 hover:border-royal-700 hover:bg-royal-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal-500/40 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border-2 border-royal-700/30 px-6 py-2.5 text-sm font-bold text-royal-800 transition-all duration-300 hover:-translate-y-0.5 hover:border-royal-700 hover:bg-royal-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal-500/40 active:translate-y-0;
   }
 
   .card {
-    @apply rounded-2xl bg-white shadow-soft ring-1 ring-royal-900/5;
+    @apply rounded-3xl bg-white shadow-soft ring-1 ring-royal-900/5;
+    transition: box-shadow .3s ease, transform .3s ease, border-color .3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 24px 60px -22px rgba(23, 27, 66, .32);
   }
 
   .input {

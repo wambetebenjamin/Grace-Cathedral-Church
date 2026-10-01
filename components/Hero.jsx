@@ -68,7 +68,7 @@ export default function Hero() {
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(75%_55%_at_50%_42%,transparent,rgba(61,1,106,0.55))]"
+        className="absolute inset-0 bg-[radial-gradient(75%_55%_at_50%_42%,transparent,rgba(11,13,36,0.62))]"
       />
 
       {/* Content */}
