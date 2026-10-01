@@ -38,7 +38,7 @@ export const metadata = {
     locale: 'en_KE',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85',
         width: 1200,
         height: 630,
         alt: 'Grace Cathedral Church. Nairobi, Kenya',
@@ -49,7 +49,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Grace Cathedral Church | Welcome Home',
     description: site.description,
-    images: ['/images/og-image.jpg'],
+    images: ['https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85'],
   },
   robots: { index: true, follow: true },
 };

@@ -22,7 +22,7 @@ const structuredData = {
   url: site.url,
   telephone: '+254112272061',
   email: site.email,
-  image: `${site.url}/images/og-image.jpg`,
+  image: `https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85`,
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Haile Selassie Avenue',
