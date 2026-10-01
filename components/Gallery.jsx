@@ -83,7 +83,7 @@ export default function Gallery() {
                 />
                 <span
                   aria-hidden
-                  className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-royal-950/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100"
+                  className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-royal-800/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100"
                 >
                   <ZoomInIcon className="h-8 w-8 text-gold-300" />
                   <span className="font-heading text-sm font-bold text-white">
@@ -105,7 +105,7 @@ export default function Gallery() {
           aria-label={`Photo: ${IMAGES[index].caption}`}
         >
           <div
-            className="absolute inset-0 bg-royal-950/95 backdrop-blur-sm"
+            className="absolute inset-0 bg-royal-900/95 backdrop-blur-sm"
             onClick={() => setIndex(null)}
           />
 
@@ -146,7 +146,7 @@ export default function Gallery() {
               <span className="font-heading text-lg font-bold text-white">
                 {IMAGES[index].caption}
               </span>
-              <span className="ml-3 text-xs font-bold tracking-widest text-purple-200/60">
+              <span className="ml-3 text-xs font-bold tracking-widest text-royal-200/60">
                 {index + 1} / {IMAGES.length}
               </span>
             </figcaption>

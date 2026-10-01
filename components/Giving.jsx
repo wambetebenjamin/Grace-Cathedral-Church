@@ -45,17 +45,8 @@ export default function Giving() {
   return (
     <section
       id="give"
-      className="relative overflow-hidden bg-gradient-to-b from-royal-950 via-royal-900 to-royal-950 py-24 lg:py-28"
+      className="relative overflow-hidden bg-gradient-to-b from-royal-700 via-royal-800 to-royal-700 py-24 lg:py-28"
     >
-      {/* Decorative glows */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute left-1/2 top-0 h-[560px] w-[860px] -translate-x-1/2 rounded-full bg-gold-400/10 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-royal-500/25 blur-3xl"
-      />
 
       <div className="container-site relative">
         <SectionHeader
@@ -69,18 +60,12 @@ export default function Giving() {
           {/* Scripture */}
           <FadeIn>
             <blockquote className="relative text-center">
-              <span
-                aria-hidden
-                className="absolute -top-8 left-1/2 -translate-x-1/2 font-heading text-8xl leading-none text-gold-400/30"
-              >
-                &ldquo;
-              </span>
-              <p className="font-heading text-xl italic leading-relaxed text-purple-50 sm:text-2xl">
+              <p className="font-heading text-xl italic leading-relaxed text-royal-50 sm:text-2xl">
                 Each of you should give what you have decided in your heart to
                 give, not reluctantly or under compulsion, for God loves a
                 cheerful giver.
               </p>
-              <footer className="mt-5 text-[11px] font-black uppercase tracking-[0.3em] text-gold-400">
+              <footer className="mt-5 text-[11px] font-black uppercase tracking-[0.3em] text-gold-300">
                 2 Corinthians 9:7
               </footer>
             </blockquote>
@@ -88,7 +73,7 @@ export default function Giving() {
 
           {/* M-Pesa card */}
           <FadeIn delay={140}>
-            <div className="mt-12 rounded-3xl border border-gold-400/25 bg-white/[0.06] p-8 shadow-soft backdrop-blur sm:p-10">
+            <div className="mt-12 rounded-3xl border border-white/15 bg-white/10 p-8 shadow-soft backdrop-blur sm:p-10">
               <p className="text-center text-[11px] font-black uppercase tracking-[0.3em] text-gold-300">
                 M-Pesa Paybill
               </p>
@@ -98,10 +83,10 @@ export default function Giving() {
                 className="group mx-auto mt-4 flex flex-col items-center gap-2"
                 aria-label={`Copy M-Pesa paybill number ${site.mpesaPaybill}`}
               >
-                <span className="font-heading text-4xl font-black tracking-[0.12em] text-gold-400 transition group-hover:text-gold-300 sm:text-5xl">
+                <span className="font-heading text-4xl font-black tracking-[0.12em] text-gold-300 transition group-hover:text-gold-300 sm:text-5xl">
                   {site.mpesaPaybill}
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-purple-200/70 transition group-hover:text-gold-300">
+                <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-royal-200/70 transition group-hover:text-gold-300">
                   {copied === 'paybill' ? (
                     <>
                       <CheckIcon className="h-3.5 w-3.5" /> Copied!
@@ -115,7 +100,7 @@ export default function Giving() {
               </button>
 
               <div className="mt-6 flex flex-col items-center gap-1.5 border-t border-white/10 pt-6 sm:flex-row sm:justify-center sm:gap-4">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-purple-200/70">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-royal-200/70">
                   Account:
                 </span>
                 <button
@@ -126,9 +111,9 @@ export default function Giving() {
                 >
                   {site.mpesaAccount}
                   {copied === 'account' ? (
-                    <CheckIcon className="h-4 w-4 text-gold-400" />
+                    <CheckIcon className="h-4 w-4 text-gold-300" />
                   ) : (
-                    <CopyIcon className="h-4 w-4 text-purple-200/50" />
+                    <CopyIcon className="h-4 w-4 text-royal-200/50" />
                   )}
                 </button>
               </div>
@@ -156,7 +141,7 @@ export default function Giving() {
                 Talk to Stewardship Team
               </a>
             </div>
-            <p className="mt-6 text-center text-xs text-purple-200/60">
+            <p className="mt-6 text-center text-xs text-royal-200/60">
               Giving is secured through M-Pesa. You will receive an M-Pesa
               confirmation message for every gift — asante sana!
             </p>
@@ -173,7 +158,7 @@ export default function Giving() {
           aria-label="Ways to give"
         >
           <div
-            className="absolute inset-0 bg-royal-950/80 backdrop-blur-sm"
+            className="absolute inset-0 bg-royal-900/80 backdrop-blur-sm"
             onClick={() => setShowWays(false)}
           />
           <div className="relative max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-3xl bg-white p-8 shadow-2xl sm:p-10">

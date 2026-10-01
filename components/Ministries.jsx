@@ -53,10 +53,6 @@ const ministries = [
 export default function Ministries() {
   return (
     <section className="relative overflow-hidden bg-white py-24 lg:py-28">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-40 top-10 h-[420px] w-[420px] rounded-full bg-gold-400/10 blur-3xl"
-      />
 
       <div className="container-site relative">
         <SectionHeader
@@ -73,7 +69,7 @@ export default function Ministries() {
                   aria-hidden
                   className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-gold-300 via-gold-500 to-gold-300 transition-transform duration-500 group-hover:scale-x-100"
                 />
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-royal-700 to-royal-950 text-gold-400 shadow-soft">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-royal-500 to-royal-700 text-white shadow-soft">
                   <ministry.Icon className="h-7 w-7" />
                 </div>
                 <h3 className="mt-5 font-heading text-xl font-bold text-royal-900">
