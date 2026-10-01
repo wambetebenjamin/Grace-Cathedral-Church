@@ -5,18 +5,22 @@ const leaders = [
   {
     name: 'Rev. Dr. Samuel Kariuki',
     role: 'Senior Pastor',
+    image: 'https://images.pexels.com/photos/6284489/pexels-photo-6284489.jpeg?auto=compress&fit=crop&w=900&q=85',
   },
   {
     name: 'Rev. Mary Wanjiku',
     role: 'Assistant Pastor, Family Life',
+    image: 'https://images.pexels.com/photos/18859686/pexels-photo-18859686.jpeg?auto=compress&fit=crop&w=900&q=85',
   },
   {
     name: 'Pst. Brian Otieno',
     role: 'Youth and Young Adults',
+    image: 'https://images.pexels.com/photos/18859686/pexels-photo-18859686.jpeg?auto=compress&fit=crop&w=900&q=85',
   },
   {
     name: 'Mama Grace Njeri',
     role: 'Church Elder and Care Lead',
+    image: 'https://images.pexels.com/photos/18859686/pexels-photo-18859686.jpeg?auto=compress&fit=crop&w=900&q=85',
   },
 ];
 
@@ -36,6 +40,12 @@ export default function Leadership() {
           {leaders.map((leader, index) => (
             <FadeIn key={leader.name} delay={index * 90}>
               <article className="overflow-hidden border border-zinc-200 bg-white">
+                <img
+                  src={leader.image}
+                  alt={`${leader.name}, ${leader.role}`}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover grayscale"
+                />
                 <div className="border-t-4 border-zinc-600 p-5">
                   <h3 className="font-sans text-lg font-bold text-zinc-900">{leader.name}</h3>
                   <p className="mt-1 text-sm text-zinc-500">{leader.role}</p>

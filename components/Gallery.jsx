@@ -11,7 +11,7 @@ import {
 } from './Icons';
 
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85', caption: 'Sunday Worship', ratio: 'aspect-[4/5]' },
+  { src: 'https://images.pexels.com/photos/18859686/pexels-photo-18859686.jpeg?auto=compress&fit=crop&w=1200&q=85', caption: 'Sunday Worship', ratio: 'aspect-[4/5]' },
   { src: 'https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1200&q=85', caption: "Men's Fellowship", ratio: 'aspect-[3/4]' },
   { src: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85', caption: 'The Cathedral Choir', ratio: 'aspect-[4/3]' },
   { src: 'https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1200&q=85', caption: 'The Word', ratio: 'aspect-[4/3]' },
