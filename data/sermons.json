@@ -1,0 +1,40 @@
+{
+  "sermons": [
+    {
+      "id": "faith-that-moves-mountains",
+      "title": "Faith That Moves Mountains",
+      "pastor": "Rev. Dr. Samuel Kariuki",
+      "date": "2026-09-27",
+      "series": "Unshakeable",
+      "scripture": "Matthew 17:14–21",
+      "duration": "42 min",
+      "thumbnail": "/images/sermons/faith.jpg",
+      "youtube": "https://www.youtube.com/@GraceCathedralNairobi",
+      "audio": "https://www.youtube.com/@GraceCathedralNairobi"
+    },
+    {
+      "id": "the-god-of-second-chances",
+      "title": "The God of Second Chances",
+      "pastor": "Rev. Mary Kariuki",
+      "date": "2026-09-20",
+      "series": "Grace Abounds",
+      "scripture": "Luke 15:11–32",
+      "duration": "38 min",
+      "thumbnail": "/images/sermons/grace.jpg",
+      "youtube": "https://www.youtube.com/@GraceCathedralNairobi",
+      "audio": "https://www.youtube.com/@GraceCathedralNairobi"
+    },
+    {
+      "id": "built-on-the-rock",
+      "title": "Built on the Rock",
+      "pastor": "Pst. Brian Otieno",
+      "date": "2026-09-13",
+      "series": "Kingdom Living",
+      "scripture": "Matthew 7:24–27",
+      "duration": "35 min",
+      "thumbnail": "/images/sermons/rock.jpg",
+      "youtube": "https://www.youtube.com/@GraceCathedralNairobi",
+      "audio": "https://www.youtube.com/@GraceCathedralNairobi"
+    }
+  ]
+}
