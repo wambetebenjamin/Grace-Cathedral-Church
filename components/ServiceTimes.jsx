@@ -5,7 +5,7 @@ import {
   BookOpenIcon,
   FlameIcon,
   MapPinIcon,
-  SparklesIcon,
+  MusicIcon,
   SunIcon,
 } from './Icons';
 
@@ -24,7 +24,7 @@ const services = [
     time: '10:30 AM',
     location: 'Main Sanctuary',
     note: 'Vibrant worship with the full choir, and Grace Kids running alongside.',
-    Icon: SparklesIcon,
+    Icon: MusicIcon,
   },
   {
     name: 'Wednesday Bible Study',
@@ -47,16 +47,6 @@ const services = [
 export default function ServiceTimes() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-royal-700 via-royal-800 to-royal-700 py-24 lg:py-28">
-      {/* decorative glows */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -left-40 top-0 h-[420px] w-[420px] rounded-full bg-gold-400/10 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-royal-500/20 blur-3xl"
-      />
-
       <div className="container-site relative">
         <SectionHeader
           tone="dark"
@@ -98,7 +88,7 @@ export default function ServiceTimes() {
         </div>
 
         <FadeIn delay={200}>
-          <p className="mt-12 text-center text-sm text-purple-100/80">
+          <p className="mt-12 text-center text-sm text-royal-100/80">
             New here?{' '}
             <a
               href="#contact"

@@ -66,7 +66,7 @@ export default function Events() {
           {/* Timeline spine */}
           <div
             aria-hidden
-            className="absolute bottom-6 left-[31px] top-6 w-px bg-gradient-to-b from-gold-400 via-gold-500/60 to-transparent"
+            className="absolute bottom-6 left-[31px] top-6 w-px bg-royal-200"
           />
 
           <ol className="space-y-8">
@@ -79,11 +79,11 @@ export default function Events() {
                       <FadeIn delay={i * 100}>
                         <div className="relative flex gap-5 sm:gap-7">
                           {/* Date badge */}
-                          <div className="relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-royal-600 to-royal-800 shadow-soft ring-2 ring-gold-400/80">
-                            <span className="font-heading text-2xl font-black leading-none text-gold-400">
+                          <div className="relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-royal-600 to-royal-800 shadow-soft ring-2 ring-gold-500/50">
+                            <span className="font-heading text-2xl font-black leading-none text-gold-300">
                               {day}
                             </span>
-                            <span className="mt-0.5 text-[10px] font-black uppercase tracking-[0.18em] text-purple-200">
+                            <span className="mt-0.5 text-[10px] font-black uppercase tracking-[0.18em] text-royal-200">
                               {month}
                             </span>
                           </div>

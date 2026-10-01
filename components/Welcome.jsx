@@ -13,27 +13,9 @@ const stats = [
 export default function Welcome() {
   return (
     <section id="about" className="relative overflow-hidden bg-white py-24 lg:py-28">
-      {/* soft decorative glows */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-44 right-0 h-[480px] w-[480px] rounded-full bg-gold-400/10 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-44 left-0 h-[420px] w-[420px] rounded-full bg-royal-700/5 blur-3xl"
-      />
-
       <div className="container-site relative grid items-center gap-16 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         {/* Pastor photo */}
         <FadeIn className="relative mx-auto w-full max-w-sm">
-          <div
-            aria-hidden
-            className="absolute -inset-4 -rotate-6 rounded-[2.75rem] border-2 border-gold-400/60"
-          />
-          <div
-            aria-hidden
-            className="absolute -inset-4 rotate-3 rounded-[2.75rem] border border-royal-200"
-          />
           <Image
             src="/images/pastor.jpg"
             alt={`${site.seniorPastor.name}, Senior Pastor of Grace Cathedral Church, Nairobi`}
@@ -42,7 +24,7 @@ export default function Welcome() {
             sizes="(max-width: 1024px) 88vw, 420px"
             className="relative aspect-square w-full rounded-full object-cover object-[50%_30%] shadow-soft"
           />
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-royal-700 px-6 py-2.5 text-[11px] font-black uppercase tracking-[0.22em] text-gold-300 shadow-soft ring-1 ring-gold-400/50">
+          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-royal-700 px-6 py-2.5 text-[11px] font-black uppercase tracking-[0.22em] text-gold-300 shadow-soft ring-1 ring-white/20">
             {site.seniorPastor.role}
           </div>
         </FadeIn>
@@ -74,7 +56,7 @@ export default function Welcome() {
 
             {/* Signature graphic */}
             <div className="mt-8">
-              <p className="font-signature text-[2.6rem] leading-none text-royal-800">
+              <p className="font-heading text-xl font-bold text-royal-900">
                 {site.seniorPastor.signature}
               </p>
               <p className="mt-2 text-[11px] font-black uppercase tracking-[0.22em] text-gold-700">

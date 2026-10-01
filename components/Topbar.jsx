@@ -4,10 +4,10 @@ import { ClockIcon, PhoneIcon, WhatsAppIcon } from './Icons';
 /** Slim utility bar: service times + phone/WhatsApp contact. */
 export default function Topbar() {
   return (
-    <div className="bg-royal-800 text-[13px] text-purple-100/90">
+    <div className="bg-royal-800 text-[13px] text-royal-100/90">
       <div className="container-site flex h-10 items-center justify-between gap-4">
         <p className="hidden items-center gap-2 min-[420px]:flex">
-          <ClockIcon className="h-4 w-4 shrink-0 text-gold-400" />
+          <ClockIcon className="h-4 w-4 shrink-0 text-gold-300" />
           <span className="font-semibold tracking-wide">{serviceSummary}</span>
         </p>
 
@@ -16,7 +16,7 @@ export default function Topbar() {
             href={site.phoneHref}
             className="flex items-center gap-2 font-semibold transition-colors hover:text-gold-300"
           >
-            <PhoneIcon className="h-4 w-4 text-gold-400" />
+            <PhoneIcon className="h-4 w-4 text-gold-300" />
             <span className="hidden sm:inline">{site.phoneDisplay}</span>
             <span className="sm:hidden">Call Us</span>
           </a>
@@ -27,7 +27,7 @@ export default function Topbar() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 font-semibold transition-colors hover:text-gold-300"
           >
-            <WhatsAppIcon className="h-4 w-4 text-gold-400" />
+            <WhatsAppIcon className="h-4 w-4 text-gold-300" />
             <span>WhatsApp</span>
           </a>
         </div>

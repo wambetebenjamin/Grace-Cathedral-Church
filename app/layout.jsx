@@ -1,46 +1,11 @@
 import './globals.css';
-import localFont from 'next/font/local';
 import Analytics from '@/components/Analytics';
 import { site } from '@/lib/site';
-
-// Self-hosted fonts (Fontsource woff2) — fast, private, and no build-time
-// dependency on Google Fonts. Playfair Display for headings, Lato for body,
-// Great Vibes for the pastor's signature.
-const playfair = localFont({
-  src: [
-    { path: './fonts/playfair-display-latin-400-normal.woff2', weight: '400', style: 'normal' },
-    { path: './fonts/playfair-display-latin-400-italic.woff2', weight: '400', style: 'italic' },
-    { path: './fonts/playfair-display-latin-700-normal.woff2', weight: '700', style: 'normal' },
-    { path: './fonts/playfair-display-latin-700-italic.woff2', weight: '700', style: 'italic' },
-    { path: './fonts/playfair-display-latin-900-normal.woff2', weight: '900', style: 'normal' },
-    { path: './fonts/playfair-display-latin-900-italic.woff2', weight: '900', style: 'italic' },
-  ],
-  variable: '--font-playfair',
-  display: 'swap',
-});
-
-const lato = localFont({
-  src: [
-    { path: './fonts/lato-latin-300-normal.woff2', weight: '300', style: 'normal' },
-    { path: './fonts/lato-latin-400-normal.woff2', weight: '400', style: 'normal' },
-    { path: './fonts/lato-latin-400-italic.woff2', weight: '400', style: 'italic' },
-    { path: './fonts/lato-latin-700-normal.woff2', weight: '700', style: 'normal' },
-    { path: './fonts/lato-latin-900-normal.woff2', weight: '900', style: 'normal' },
-  ],
-  variable: '--font-lato',
-  display: 'swap',
-});
-
-const signature = localFont({
-  src: [{ path: './fonts/great-vibes-latin-400-normal.woff2', weight: '400', style: 'normal' }],
-  variable: '--font-signature',
-  display: 'swap',
-});
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#4B0082',
+  themeColor: '#274c6b',
 };
 
 export const metadata = {
@@ -93,7 +58,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${lato.variable} ${signature.variable} font-body bg-white text-slate-700 antialiased`}
+        className="font-body bg-white text-slate-700 antialiased"
       >
         {children}
         <Analytics />

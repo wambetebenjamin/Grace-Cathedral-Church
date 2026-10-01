@@ -12,20 +12,20 @@ body {
 }
 
 ::selection {
-  background: rgba(255, 215, 0, 0.45);
-  color: #2f0153;
+  background: rgba(39, 76, 107, 0.18);
+  color: #16293b;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f4f0fa;
+  background: #eef2f6;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #65309b, #3d016a);
+  background: linear-gradient(180deg, #45779f, #1e3a53);
   border-radius: 999px;
-  border: 2px solid #f4f0fa;
+  border: 2px solid #eef2f6;
 }
 
 @layer components {
@@ -33,17 +33,17 @@ body {
     @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
   }
 
-  /* Gold primary button */
+  /* Light button for dark sections */
   .btn-gold {
-    @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-b from-gold-300 via-gold-400 to-gold-600 px-8 py-3.5 text-sm font-black uppercase tracking-wide text-royal-900 shadow-gold transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-white px-8 py-3.5 text-sm font-black uppercase tracking-wide text-royal-800 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-royal-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 active:translate-y-0;
   }
 
-  /* Ghost button over dark imagery */
+  /* Outline button over dark imagery */
   .btn-outline-light {
     @apply inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-white/70 px-8 py-3 text-sm font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-gold-400 hover:text-gold-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:translate-y-0;
   }
 
-  /* Solid purple button */
+  /* Solid navy button */
   .btn-purple {
     @apply inline-flex items-center justify-center gap-2 rounded-full bg-royal-700 px-6 py-3 text-sm font-bold text-white shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-royal-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal-500 focus-visible:ring-offset-2 active:translate-y-0;
   }
@@ -76,22 +76,6 @@ body {
 .hero-anim {
   opacity: 0;
   animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-/* ── WhatsApp widget pulse (purple) ────────────────────────── */
-@keyframes pulse-ring {
-  0% {
-    transform: scale(1);
-    opacity: 0.55;
-  }
-  75%,
-  100% {
-    transform: scale(1.85);
-    opacity: 0;
-  }
-}
-.animate-pulse-ring {
-  animation: pulse-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 /* ── Floating scroll hint ──────────────────────────────────── */
@@ -127,7 +111,7 @@ body {
   }
 }
 .skeleton {
-  background: linear-gradient(90deg, #efe9f7 25%, #f8f4fd 50%, #efe9f7 75%);
+  background: linear-gradient(90deg, #e8edf2 25%, #f5f8fa 50%, #e8edf2 75%);
   background-size: 800px 100%;
   animation: shimmer 1.4s linear infinite;
 }
@@ -138,7 +122,6 @@ body {
     scroll-behavior: auto;
   }
   .hero-anim,
-  .animate-pulse-ring,
   .animate-float,
   .skeleton {
     animation: none !important;

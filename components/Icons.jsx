@@ -247,14 +247,6 @@ export function ShieldIcon(props) {
   );
 }
 
-export function SparklesIcon(props) {
-  return (
-    <Svg {...props}>
-      <path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3z" />
-    </Svg>
-  );
-}
-
 export function CheckIcon(props) {
   return (
     <Svg {...props}>

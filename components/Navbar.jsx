@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#home" className="group flex items-center gap-3" aria-label="Grace Cathedral Church — home">
             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-royal-500 to-royal-700 shadow-soft transition-transform duration-300 group-hover:scale-105">
-              <CrossIcon className="h-6 w-6 text-gold-400" strokeWidth={2.2} />
+              <CrossIcon className="h-6 w-6 text-white" strokeWidth={2.2} />
             </span>
             <span className="leading-tight">
               <span className="block font-heading text-lg font-black text-royal-900">
@@ -78,7 +78,7 @@ export default function Navbar() {
                   <li key={link.href} className="ml-3">
                     <a
                       href={link.href}
-                      className="inline-flex items-center rounded-full bg-gradient-to-b from-gold-300 via-gold-400 to-gold-600 px-6 py-2.5 text-sm font-black uppercase tracking-wide text-royal-900 shadow-gold transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110"
+                      className="inline-flex items-center rounded-full bg-royal-700 px-6 py-2.5 text-sm font-black uppercase tracking-wide text-white shadow-gold transition-all duration-300 hover:-translate-y-0.5 hover:bg-royal-800"
                     >
                       {link.label}
                     </a>
@@ -142,7 +142,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between border-b border-white/10 px-6 py-5">
             <span className="flex items-center gap-2.5">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10">
-                <CrossIcon className="h-5 w-5 text-gold-400" strokeWidth={2.2} />
+                <CrossIcon className="h-5 w-5 text-white" strokeWidth={2.2} />
               </span>
               <span className="font-heading text-base font-black text-white">
                 Grace Cathedral
@@ -152,7 +152,7 @@ export default function Navbar() {
               type="button"
               onClick={() => setOpen(false)}
               aria-label="Close navigation menu"
-              className="flex h-10 w-10 items-center justify-center rounded-xl text-purple-100 ring-1 ring-white/15 transition hover:bg-white/10"
+              className="flex h-10 w-10 items-center justify-center rounded-xl text-royal-100 ring-1 ring-white/15 transition hover:bg-white/10"
             >
               <CloseIcon className="h-5 w-5" />
             </button>
@@ -165,7 +165,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`flex items-center justify-between rounded-xl px-4 py-3.5 font-heading text-2xl font-bold transition-all duration-300 ${
+                  className={`flex items-center justify-between rounded-xl px-4 py-3.5 font-heading text-xl font-bold transition-all duration-300 ${
                     open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                   } ${
                     active === link.href.slice(1)
@@ -175,9 +175,6 @@ export default function Navbar() {
                   style={{ transitionDelay: open ? `${120 + i * 60}ms` : '0ms' }}
                 >
                   {link.label}
-                  <span className="text-xs font-body font-bold uppercase tracking-widest text-gold-500/70">
-                    0{i + 1}
-                  </span>
                 </a>
               </li>
             ))}
@@ -189,7 +186,7 @@ export default function Navbar() {
               href={site.youtube}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2.5 rounded-full bg-gradient-to-b from-gold-300 via-gold-400 to-gold-600 px-6 py-3 text-sm font-black uppercase tracking-wide text-royal-900 shadow-gold"
+              className="flex w-full items-center justify-center gap-2.5 rounded-full bg-white px-6 py-3 text-sm font-black uppercase tracking-wide text-royal-800 shadow-soft"
             >
               <PlayIcon className="h-4 w-4" /> Watch Live
             </a>
@@ -201,7 +198,7 @@ export default function Navbar() {
             >
               <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
             </a>
-            <p className="pt-2 text-center text-xs leading-relaxed text-purple-200/70">
+            <p className="pt-2 text-center text-xs leading-relaxed text-royal-200/70">
               Sundays 8:00 AM &amp; 10:30 AM
               <br />
               Wednesdays 6:00 PM · Fridays 5:30 PM (Youth)

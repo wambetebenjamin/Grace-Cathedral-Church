@@ -12,7 +12,6 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
 import MobileBottomBar from '@/components/MobileBottomBar';
-import { GoldRule } from '@/components/SectionHeader';
 import { site } from '@/lib/site';
 
 const structuredData = {
@@ -51,21 +50,13 @@ export default function Home() {
 
       <main>
         <Hero />
-        <GoldRule />
         <Welcome />
-        <GoldRule />
         <ServiceTimes />
-        <GoldRule />
         <Sermons />
-        <GoldRule />
         <Events />
-        <GoldRule />
         <Giving />
-        <GoldRule />
         <Gallery />
-        <GoldRule />
         <Ministries />
-        <GoldRule />
         <Contact />
       </main>
 

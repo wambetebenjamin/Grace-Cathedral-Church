@@ -146,7 +146,7 @@ export default function Gallery() {
               <span className="font-heading text-lg font-bold text-white">
                 {IMAGES[index].caption}
               </span>
-              <span className="ml-3 text-xs font-bold tracking-widest text-purple-200/60">
+              <span className="ml-3 text-xs font-bold tracking-widest text-royal-200/60">
                 {index + 1} / {IMAGES.length}
               </span>
             </figcaption>
