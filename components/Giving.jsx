@@ -45,16 +45,16 @@ export default function Giving() {
   return (
     <section
       id="give"
-      className="relative overflow-hidden bg-gradient-to-b from-royal-950 via-royal-900 to-royal-950 py-24 lg:py-28"
+      className="relative overflow-hidden bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 py-24 lg:py-28"
     >
       {/* Decorative glows */}
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-0 h-[560px] w-[860px] -translate-x-1/2 rounded-full bg-gold-400/10 blur-3xl"
+        className="pointer-events-none absolute left-1/2 top-0 h-[560px] w-[860px] -translate-x-1/2 rounded-full bg-sky-400/10 blur-3xl"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-royal-500/25 blur-3xl"
+        className="pointer-events-none absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-blue-500/25 blur-3xl"
       />
 
       <div className="container-site relative">
@@ -71,16 +71,16 @@ export default function Giving() {
             <blockquote className="relative text-center">
               <span
                 aria-hidden
-                className="absolute -top-8 left-1/2 -translate-x-1/2 font-heading text-8xl leading-none text-gold-400/30"
+                className="absolute -top-8 left-1/2 -translate-x-1/2 font-sans text-8xl leading-none text-sky-400/30"
               >
                 &ldquo;
               </span>
-              <p className="font-heading text-xl italic leading-relaxed text-purple-50 sm:text-2xl">
+              <p className="font-sans text-xl italic leading-relaxed text-blue-50 sm:text-2xl">
                 Each of you should give what you have decided in your heart to
                 give, not reluctantly or under compulsion, for God loves a
                 cheerful giver.
               </p>
-              <footer className="mt-5 text-[11px] font-black uppercase tracking-[0.3em] text-gold-400">
+              <footer className="mt-5 text-[11px] font-black uppercase tracking-[0.3em] text-sky-400">
                 2 Corinthians 9:7
               </footer>
             </blockquote>
@@ -88,8 +88,8 @@ export default function Giving() {
 
           {/* M-Pesa card */}
           <FadeIn delay={140}>
-            <div className="mt-12 rounded-3xl border border-gold-400/25 bg-white/[0.06] p-8 shadow-soft backdrop-blur sm:p-10">
-              <p className="text-center text-[11px] font-black uppercase tracking-[0.3em] text-gold-300">
+            <div className="mt-12 rounded-3xl border border-sky-400/25 bg-white/[0.06] p-8 shadow-md backdrop-blur sm:p-10">
+              <p className="text-center text-[11px] font-black uppercase tracking-[0.3em] text-sky-300">
                 M-Pesa Paybill
               </p>
               <button
@@ -98,10 +98,10 @@ export default function Giving() {
                 className="group mx-auto mt-4 flex flex-col items-center gap-2"
                 aria-label={`Copy M-Pesa paybill number ${site.mpesaPaybill}`}
               >
-                <span className="font-heading text-4xl font-black tracking-[0.12em] text-gold-400 transition group-hover:text-gold-300 sm:text-5xl">
+                <span className="font-sans text-4xl font-black tracking-[0.12em] text-sky-400 transition group-hover:text-sky-300 sm:text-5xl">
                   {site.mpesaPaybill}
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-purple-200/70 transition group-hover:text-gold-300">
+                <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-blue-200/70 transition group-hover:text-sky-300">
                   {copied === 'paybill' ? (
                     <>
                       <CheckIcon className="h-3.5 w-3.5" /> Copied!
@@ -115,20 +115,20 @@ export default function Giving() {
               </button>
 
               <div className="mt-6 flex flex-col items-center gap-1.5 border-t border-white/10 pt-6 sm:flex-row sm:justify-center sm:gap-4">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-purple-200/70">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-blue-200/70">
                   Account:
                 </span>
                 <button
                   type="button"
                   onClick={() => copy(site.mpesaAccount, 'account')}
-                  className="inline-flex items-center gap-2 font-heading text-lg font-bold text-white transition hover:text-gold-300"
+                  className="inline-flex items-center gap-2 font-sans text-lg font-bold text-white transition hover:text-sky-300"
                   aria-label={`Copy account name ${site.mpesaAccount}`}
                 >
                   {site.mpesaAccount}
                   {copied === 'account' ? (
-                    <CheckIcon className="h-4 w-4 text-gold-400" />
+                    <CheckIcon className="h-4 w-4 text-sky-400" />
                   ) : (
-                    <CopyIcon className="h-4 w-4 text-purple-200/50" />
+                    <CopyIcon className="h-4 w-4 text-blue-200/50" />
                   )}
                 </button>
               </div>
@@ -141,7 +141,7 @@ export default function Giving() {
               <button
                 type="button"
                 onClick={() => setShowWays(true)}
-                className="btn-gold w-full sm:w-auto"
+                className="btn-primary w-full sm:w-auto"
               >
                 <GiftIcon className="h-5 w-5" />
                 Give Online
@@ -156,9 +156,9 @@ export default function Giving() {
                 Talk to Stewardship Team
               </a>
             </div>
-            <p className="mt-6 text-center text-xs text-purple-200/60">
+            <p className="mt-6 text-center text-xs text-blue-200/60">
               Giving is secured through M-Pesa. You will receive an M-Pesa
-              confirmation message for every gift — asante sana!
+              confirmation message for every gift. asante sana!
             </p>
           </FadeIn>
         </div>
@@ -173,7 +173,7 @@ export default function Giving() {
           aria-label="Ways to give"
         >
           <div
-            className="absolute inset-0 bg-royal-950/80 backdrop-blur-sm"
+            className="absolute inset-0 bg-blue-950/80 backdrop-blur-sm"
             onClick={() => setShowWays(false)}
           />
           <div className="relative max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-3xl bg-white p-8 shadow-2xl sm:p-10">
@@ -181,24 +181,24 @@ export default function Giving() {
               type="button"
               onClick={() => setShowWays(false)}
               aria-label="Close giving options"
-              className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-xl text-slate-400 transition hover:bg-royal-50 hover:text-royal-800"
+              className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-xl text-slate-400 transition hover:bg-blue-50 hover:text-blue-800"
             >
               <CloseIcon className="h-5 w-5" />
             </button>
 
             <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-royal-50 text-gold-600">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-sky-600">
                 <CrossIcon className="h-6 w-6" strokeWidth={2.2} />
               </span>
-              <h3 className="font-heading text-2xl font-black text-royal-900">
+              <h3 className="font-sans text-2xl font-black text-blue-900">
                 Ways to Give
               </h3>
             </div>
 
             <div className="mt-7 space-y-7 text-sm leading-relaxed text-slate-600">
               <div>
-                <p className="mb-3 inline-flex items-center gap-2 font-heading text-base font-bold text-royal-800">
-                  <span className="h-2 w-2 rounded-full bg-gold-500" /> M-Pesa (Paybill)
+                <p className="mb-3 inline-flex items-center gap-2 font-sans text-base font-bold text-blue-800">
+                  <span className="h-2 w-2 rounded-full bg-sky-500" /> M-Pesa (Paybill)
                 </p>
                 <ol className="ml-4 list-decimal space-y-1.5 text-slate-600">
                   <li>
@@ -207,22 +207,22 @@ export default function Giving() {
                   </li>
                   <li>
                     Business Number:{' '}
-                    <strong className="text-royal-800">{site.mpesaPaybill}</strong>
+                    <strong className="text-blue-800">{site.mpesaPaybill}</strong>
                   </li>
                   <li>
                     Account Number:{' '}
-                    <strong className="text-royal-800">{site.mpesaAccount}</strong>
+                    <strong className="text-blue-800">{site.mpesaAccount}</strong>
                   </li>
-                  <li>Enter amount, your PIN and send — God bless you!</li>
+                  <li>Enter amount, your PIN and send. God bless you!</li>
                 </ol>
               </div>
 
               <div>
-                <p className="mb-3 inline-flex items-center gap-2 font-heading text-base font-bold text-royal-800">
-                  <span className="h-2 w-2 rounded-full bg-gold-500" /> Bank Transfer
+                <p className="mb-3 inline-flex items-center gap-2 font-sans text-base font-bold text-blue-800">
+                  <span className="h-2 w-2 rounded-full bg-sky-500" /> Bank Transfer
                 </p>
                 <p>
-                  {site.bank.name} — {site.bank.branch} Branch
+                  {site.bank.name}. {site.bank.branch} Branch
                   <br />
                   Account Name: <strong>{site.bank.accountName}</strong>
                   <br />
@@ -231,8 +231,8 @@ export default function Giving() {
               </div>
 
               <div>
-                <p className="mb-3 inline-flex items-center gap-2 font-heading text-base font-bold text-royal-800">
-                  <span className="h-2 w-2 rounded-full bg-gold-500" /> In Service
+                <p className="mb-3 inline-flex items-center gap-2 font-sans text-base font-bold text-blue-800">
+                  <span className="h-2 w-2 rounded-full bg-sky-500" /> In Service
                 </p>
                 <p>
                   Giving baskets are passed during every service, and stewards are
@@ -246,7 +246,7 @@ export default function Giving() {
               href={waLink('Hello! I have a question about giving at Grace Cathedral Church.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-purple mt-8 w-full"
+              className="btn-blue mt-8 w-full"
             >
               <WhatsAppIcon className="h-4 w-4" />
               Ask the Stewardship Team

@@ -54,7 +54,7 @@ export default function Contact() {
       }
     } catch {
       setStatus('error');
-      setServerMessage('Network error — please check your connection and try again.');
+      setServerMessage('Network error. please check your connection and try again.');
     }
   };
 
@@ -96,7 +96,7 @@ export default function Contact() {
         <SectionHeader
           eyebrow="We’d Love to Hear From You"
           title="Visit or Contact Us"
-          subtitle="Questions, prayer requests, or planning your first visit — send us a message and our team will get back to you."
+          subtitle="Questions, prayer requests, or planning your first visit. send us a message and our team will get back to you."
         />
 
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
@@ -107,9 +107,9 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="contact-name"
-                    className="mb-1.5 block text-[13px] font-bold text-royal-900"
+                    className="mb-1.5 block text-[13px] font-bold text-blue-900"
                   >
-                    Name <span className="text-gold-600">*</span>
+                    Name <span className="text-sky-600">*</span>
                   </label>
                   <input
                     id="contact-name"
@@ -128,9 +128,9 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="contact-email"
-                    className="mb-1.5 block text-[13px] font-bold text-royal-900"
+                    className="mb-1.5 block text-[13px] font-bold text-blue-900"
                   >
-                    Email <span className="text-gold-600">*</span>
+                    Email <span className="text-sky-600">*</span>
                   </label>
                   <input
                     id="contact-email"
@@ -149,7 +149,7 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="contact-phone"
-                    className="mb-1.5 block text-[13px] font-bold text-royal-900"
+                    className="mb-1.5 block text-[13px] font-bold text-blue-900"
                   >
                     Phone
                   </label>
@@ -170,9 +170,9 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="contact-message"
-                    className="mb-1.5 block text-[13px] font-bold text-royal-900"
+                    className="mb-1.5 block text-[13px] font-bold text-blue-900"
                   >
-                    Message <span className="text-gold-600">*</span>
+                    Message <span className="text-sky-600">*</span>
                   </label>
                   <textarea
                     id="contact-message"
@@ -188,7 +188,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Honeypot — hidden from humans */}
+              {/* Honeypot. hidden from humans */}
               <input
                 type="text"
                 name="website"
@@ -203,7 +203,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="btn-purple mt-7 w-full disabled:cursor-not-allowed disabled:opacity-60"
+                className="btn-blue mt-7 w-full disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {status === 'sending' ? (
                   <>
@@ -234,13 +234,13 @@ export default function Contact() {
           {/* ── Details + map ────────────────────────────────── */}
           <FadeIn delay={140} className="flex flex-col gap-8">
             <div className="card p-7 sm:p-9">
-              <h3 className="font-heading text-xl font-black text-royal-900">
+              <h3 className="font-sans text-xl font-black text-blue-900">
                 Grace Cathedral Church
               </h3>
               <ul className="mt-5 space-y-4">
                 {contactItems.map((item) => (
                   <li key={item.label} className="flex items-start gap-4">
-                    <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-royal-50 text-royal-700 ring-1 ring-royal-100">
+                    <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-100">
                       <item.Icon className="h-5 w-5" />
                     </span>
                     <span>
@@ -252,12 +252,12 @@ export default function Contact() {
                           href={item.href}
                           target={item.href.startsWith('http') ? '_blank' : undefined}
                           rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-sm font-semibold text-royal-800 transition hover:text-gold-700"
+                          className="text-sm font-semibold text-blue-800 transition hover:text-sky-700"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <span className="text-sm font-semibold text-royal-800">{item.value}</span>
+                        <span className="text-sm font-semibold text-blue-800">{item.value}</span>
                       )}
                     </span>
                   </li>
@@ -265,11 +265,11 @@ export default function Contact() {
               </ul>
             </div>
 
-            {/* Google Maps embed — Nairobi */}
+            {/* Google Maps embed. Nairobi */}
             <div className="card overflow-hidden">
               <iframe
                 src={site.mapEmbed}
-                title="Map — Grace Cathedral Church, Nairobi"
+                title="Map. Grace Cathedral Church, Nairobi"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen

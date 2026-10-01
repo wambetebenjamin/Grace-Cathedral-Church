@@ -7,9 +7,9 @@ const LIST_KEY = 'grace-cathedral:newsletter';
 
 /**
  * Persists a subscriber email:
- *  1. Vercel KV / Upstash Redis (REST) when env vars are set — production path.
+ *  1. Vercel KV / Upstash Redis (REST) when env vars are set. production path.
  *  2. Otherwise a local JSON file (data/newsletter-subscribers.json) when the
- *     filesystem is writable (local dev) — and a log line as a last resort.
+ *     filesystem is writable (local dev). and a log line as a last resort.
  */
 async function saveSubscriber(email) {
   const restUrl = process.env.UPSTASH_REDIS_REST_URL;
@@ -86,6 +86,6 @@ export async function POST(request) {
 export async function GET() {
   return NextResponse.json({
     ok: true,
-    message: 'Newsletter API — POST { "email": "you@example.com" }',
+    message: 'Newsletter API. POST { "email": "you@example.com" }',
   });
 }

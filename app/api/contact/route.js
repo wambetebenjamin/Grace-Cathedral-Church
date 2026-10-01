@@ -18,7 +18,7 @@ export async function POST(request) {
 
   const { name, email, phone, message, website } = body ?? {};
 
-  // Honeypot — bots that fill the hidden field get a fake success.
+  // Honeypot. bots that fill the hidden field get a fake success.
   if (website) {
     return NextResponse.json({ ok: true, message: 'Thank you!' });
   }
@@ -95,7 +95,7 @@ export async function POST(request) {
       );
     }
   } else {
-    // No SMTP configured — validate + log so local demos still work.
+    // No SMTP configured. validate + log so local demos still work.
     console.log('[contact] Message received (SMTP not configured):', {
       name: cleanName,
       email: cleanEmail,
@@ -107,13 +107,13 @@ export async function POST(request) {
   return NextResponse.json({
     ok: true,
     delivered,
-    message: 'Asante sana! Your message has been received — we will be in touch soon.',
+    message: 'Asante sana! Your message has been received. we will be in touch soon.',
   });
 }
 
 export async function GET() {
   return NextResponse.json({
     ok: true,
-    message: 'Contact API — POST { name, email, phone, message }',
+    message: 'Contact API. POST { name, email, phone, message }',
   });
 }

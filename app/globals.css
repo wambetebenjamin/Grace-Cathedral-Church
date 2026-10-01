@@ -12,20 +12,20 @@ body {
 }
 
 ::selection {
-  background: rgba(255, 215, 0, 0.45);
-  color: #2f0153;
+  background: rgba(14, 165, 233, 0.25);
+  color: #0f172a;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f4f0fa;
+  background: #f8fafc;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #4b0082, #2f0153);
+  background: linear-gradient(180deg, #2563eb, #0f172a);
   border-radius: 999px;
-  border: 2px solid #f4f0fa;
+  border: 2px solid #f8fafc;
 }
 
 @layer components {
@@ -33,32 +33,32 @@ body {
     @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
   }
 
-  /* Gold primary button */
-  .btn-gold {
-    @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-b from-gold-300 via-gold-400 to-gold-600 px-8 py-3.5 text-sm font-black uppercase tracking-wide text-royal-900 shadow-gold transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 active:translate-y-0;
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-b from-sky-300 via-sky-400 to-sky-600 px-8 py-3.5 text-sm font-black uppercase tracking-wide text-blue-900 shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-300 focus-visible:ring-offset-2 active:translate-y-0;
   }
 
   /* Ghost button over dark imagery */
   .btn-outline-light {
-    @apply inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-white/70 px-8 py-3 text-sm font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-gold-400 hover:text-gold-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-white/70 px-8 py-3 text-sm font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-400 hover:text-sky-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:translate-y-0;
   }
 
-  /* Solid purple button */
-  .btn-purple {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-royal-700 px-6 py-3 text-sm font-bold text-white shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-royal-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal-500 focus-visible:ring-offset-2 active:translate-y-0;
+  /* Solid blue button */
+  .btn-blue {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-blue-700 px-6 py-3 text-sm font-bold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 active:translate-y-0;
   }
 
-  /* Outlined royal button */
-  .btn-outline-royal {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-royal-700/30 px-6 py-2.5 text-sm font-bold text-royal-800 transition-all duration-300 hover:-translate-y-0.5 hover:border-royal-700 hover:bg-royal-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal-500/40 active:translate-y-0;
+  /* Outlined blue button */
+  .btn-outline-blue {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-blue-700/30 px-6 py-2.5 text-sm font-bold text-blue-800 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-700 hover:bg-blue-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/40 active:translate-y-0;
   }
 
   .card {
-    @apply rounded-2xl bg-white shadow-soft ring-1 ring-royal-900/5;
+    @apply rounded-2xl bg-white shadow-md ring-1 ring-blue-900/5;
   }
 
   .input {
-    @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 transition focus:border-royal-600 focus:outline-none focus:ring-4 focus:ring-royal-600/15;
+    @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 transition focus:border-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-600/15;
   }
 }
 
@@ -78,7 +78,7 @@ body {
   animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* ── WhatsApp widget pulse (purple) ────────────────────────── */
+/* ── WhatsApp widget pulse (blue) ────────────────────────── */
 @keyframes pulse-ring {
   0% {
     transform: scale(1);

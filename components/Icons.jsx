@@ -1,5 +1,5 @@
 /**
- * Inline SVG icon set — stroke icons (feather-style) + brand glyphs.
+ * Inline SVG icon set. stroke icons (feather-style) + brand glyphs.
  * All icons accept a className and spread remaining SVG props.
  */
 

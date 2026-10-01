@@ -1,7 +1,7 @@
 import Script from 'next/script';
 
 /**
- * Google Analytics 4 — only loads when NEXT_PUBLIC_GA_MEASUREMENT_ID is set.
+ * Google Analytics 4. only loads when NEXT_PUBLIC_GA_MEASUREMENT_ID is set.
  * Set it in .env.local or in Vercel → Settings → Environment Variables.
  */
 export default function Analytics() {

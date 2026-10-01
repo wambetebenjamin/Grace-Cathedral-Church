@@ -1,6 +1,6 @@
 export default function manifest() {
   return {
-    name: 'Grace Cathedral Church — Nairobi',
+    name: 'Grace Cathedral Church. Nairobi',
     short_name: 'Grace Cathedral',
     description:
       'Welcome home. Join us every Sunday at 8:00 AM & 10:30 AM in Nairobi, Kenya.',

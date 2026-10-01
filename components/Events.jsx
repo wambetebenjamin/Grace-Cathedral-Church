@@ -59,14 +59,14 @@ export default function Events() {
         <SectionHeader
           eyebrow="Mark Your Calendar"
           title="Upcoming Events"
-          subtitle="There is always something happening in the house — come and be part of it."
+          subtitle="There is always something happening in the house. come and be part of it."
         />
 
         <div className="relative mx-auto max-w-3xl">
           {/* Timeline spine */}
           <div
             aria-hidden
-            className="absolute bottom-6 left-[31px] top-6 w-px bg-gradient-to-b from-gold-400 via-gold-500/60 to-transparent"
+            className="absolute bottom-6 left-[31px] top-6 w-px bg-gradient-to-b from-sky-400 via-sky-500/60 to-transparent"
           />
 
           <ol className="space-y-8">
@@ -79,11 +79,11 @@ export default function Events() {
                       <FadeIn delay={i * 100}>
                         <div className="relative flex gap-5 sm:gap-7">
                           {/* Date badge */}
-                          <div className="relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-royal-800 to-royal-950 shadow-soft ring-2 ring-gold-400/80">
-                            <span className="font-heading text-2xl font-black leading-none text-gold-400">
+                          <div className="relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-blue-800 to-blue-950 shadow-md ring-2 ring-sky-400/80">
+                            <span className="font-sans text-2xl font-black leading-none text-sky-400">
                               {day}
                             </span>
-                            <span className="mt-0.5 text-[10px] font-black uppercase tracking-[0.18em] text-purple-200">
+                            <span className="mt-0.5 text-[10px] font-black uppercase tracking-[0.18em] text-blue-200">
                               {month}
                             </span>
                           </div>
@@ -91,7 +91,7 @@ export default function Events() {
                           {/* Card */}
                           <article className="card group flex-1 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7">
                             <div className="flex flex-wrap items-center gap-3">
-                              <span className="rounded-full bg-royal-50 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-royal-700 ring-1 ring-royal-100">
+                              <span className="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-blue-700 ring-1 ring-blue-100">
                                 {event.tag}
                               </span>
                               <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
@@ -99,17 +99,17 @@ export default function Events() {
                               </span>
                             </div>
 
-                            <h3 className="mt-3 font-heading text-xl font-bold leading-snug text-royal-900 sm:text-2xl">
+                            <h3 className="mt-3 font-sans text-xl font-bold leading-snug text-blue-900 sm:text-2xl">
                               {event.name}
                             </h3>
 
                             <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-[13px] font-semibold text-slate-500">
                               <span className="inline-flex items-center gap-1.5">
-                                <ClockIcon className="h-4 w-4 text-gold-600" />
+                                <ClockIcon className="h-4 w-4 text-sky-600" />
                                 {event.time}
                               </span>
                               <span className="inline-flex items-center gap-1.5">
-                                <MapPinIcon className="h-4 w-4 text-gold-600" />
+                                <MapPinIcon className="h-4 w-4 text-sky-600" />
                                 {event.location}
                               </span>
                             </div>
@@ -125,7 +125,7 @@ export default function Events() {
                                 )}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="btn-outline-royal"
+                                className="btn-outline-blue"
                               >
                                 Register
                                 <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import fallbackData from '@/data/sermons.json';
 import { site } from '@/lib/site';
 import FadeIn from './FadeIn';
@@ -72,7 +71,7 @@ export default function Sermons() {
         <SectionHeader
           eyebrow="Grow With Us"
           title="Latest Sermons"
-          subtitle="Missed a Sunday? Catch up on the Word — watch, listen and share with a friend who needs it."
+          subtitle="Missed a Sunday? Catch up on the Word. watch, listen and share with a friend who needs it."
         />
 
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
@@ -83,30 +82,27 @@ export default function Sermons() {
                   <article className="card group flex h-full flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
                     {/* Thumbnail */}
                     <div className="relative overflow-hidden">
-                      <Image
+                      <img
                         src={sermon.thumbnail}
-                        alt={`${sermon.title} — sermon thumbnail`}
-                        width={800}
-                        height={450}
-                        sizes="(max-width: 768px) 92vw, (max-width: 1024px) 46vw, 30vw"
+                        alt={`${sermon.title}. sermon thumbnail`}
                         loading="lazy"
                         className="aspect-video w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                       <div
                         aria-hidden
-                        className="absolute inset-0 bg-gradient-to-t from-royal-950/70 via-transparent to-transparent"
+                        className="absolute inset-0 bg-gradient-to-t from-blue-950/70 via-transparent to-transparent"
                       />
-                      <span className="absolute left-4 top-4 rounded-full bg-gold-400 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-royal-900 shadow">
+                      <span className="absolute left-4 top-4 rounded-full bg-sky-400 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-blue-900 shadow">
                         {sermon.series}
                       </span>
-                      <span className="absolute bottom-4 right-4 rounded-full bg-royal-950/70 px-3 py-1 text-[11px] font-bold text-purple-100 backdrop-blur">
+                      <span className="absolute bottom-4 right-4 rounded-full bg-blue-950/70 px-3 py-1 text-[11px] font-bold text-blue-100 backdrop-blur">
                         {sermon.duration}
                       </span>
                     </div>
 
                     {/* Body */}
                     <div className="flex flex-1 flex-col p-6">
-                      <h3 className="font-heading text-xl font-bold leading-snug text-royal-900 transition-colors group-hover:text-royal-700">
+                      <h3 className="font-sans text-xl font-bold leading-snug text-blue-900 transition-colors group-hover:text-blue-700">
                         {sermon.title}
                       </h3>
                       <p className="mt-1.5 text-[13px] italic text-slate-400">
@@ -114,11 +110,11 @@ export default function Sermons() {
                       </p>
                       <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[13px] font-semibold text-slate-500">
                         <span className="inline-flex items-center gap-1.5">
-                          <UsersIcon className="h-4 w-4 text-gold-600" />
+                          <UsersIcon className="h-4 w-4 text-sky-600" />
                           {sermon.pastor}
                         </span>
                         <span className="inline-flex items-center gap-1.5">
-                          <CalendarIcon className="h-4 w-4 text-gold-600" />
+                          <CalendarIcon className="h-4 w-4 text-sky-600" />
                           {formatDate(sermon.date)}
                         </span>
                       </div>
@@ -128,7 +124,7 @@ export default function Sermons() {
                           href={sermon.youtube}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="btn-purple flex-1"
+                          className="btn-blue flex-1"
                           aria-label={`Watch ${sermon.title}`}
                         >
                           <PlayIcon className="h-4 w-4" />
@@ -138,7 +134,7 @@ export default function Sermons() {
                           href={sermon.audio}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="btn-outline-royal flex-1"
+                          className="btn-outline-blue flex-1"
                           aria-label={`Listen to ${sermon.title}`}
                         >
                           <HeadphonesIcon className="h-4 w-4" />
@@ -157,7 +153,7 @@ export default function Sermons() {
               href={site.youtube}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-bold text-royal-800 underline decoration-gold-400 decoration-2 underline-offset-8 transition hover:text-royal-600"
+              className="inline-flex items-center gap-2 text-sm font-bold text-blue-800 underline decoration-sky-400 decoration-2 underline-offset-8 transition hover:text-blue-600"
             >
               Browse the full sermon archive on YouTube
               <ArrowRightIcon className="h-4 w-4" />

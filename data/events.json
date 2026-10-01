@@ -16,7 +16,7 @@
       "time": "9:00 AM – 4:00 PM",
       "location": "Cathedral Hall",
       "tag": "Youth",
-      "description": "A one-day explosion of worship, the Word, games and real talk for teens and young adults. Bring a friend — entry is free."
+      "description": "A one-day explosion of worship, the Word, games and real talk for teens and young adults. Bring a friend. entry is free."
     },
     {
       "id": "marriage-family-dinner",
@@ -29,7 +29,7 @@
     },
     {
       "id": "feed-the-city",
-      "name": "Feed the City — Community Outreach",
+      "name": "Feed the City. Community Outreach",
       "date": "2026-11-07",
       "time": "8:00 AM – 1:00 PM",
       "location": "Nairobi CBD & Eastlands",
@@ -38,12 +38,12 @@
     },
     {
       "id": "glory-christmas-cantata",
-      "name": "Glory — The Christmas Cantata",
+      "name": "Glory. The Christmas Cantata",
       "date": "2026-12-13",
       "time": "5:00 PM – 7:00 PM",
       "location": "Main Sanctuary",
       "tag": "Christmas",
-      "description": "Our choir and worship team present the story of Christmas in song, drama and pageantry. Admission is free — arrive early."
+      "description": "Our choir and worship team present the story of Christmas in song, drama and pageantry. Admission is free. arrive early."
     }
   ]
 }

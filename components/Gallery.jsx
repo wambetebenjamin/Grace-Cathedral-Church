@@ -11,18 +11,18 @@ import {
 } from './Icons';
 
 const IMAGES = [
-  { src: '/images/gallery/worship.jpg', caption: 'Sunday Worship', ratio: 'aspect-[4/5]' },
-  { src: '/images/gallery/men.jpg', caption: "Men's Fellowship", ratio: 'aspect-[3/4]' },
-  { src: '/images/gallery/choir.jpg', caption: 'The Cathedral Choir', ratio: 'aspect-[4/3]' },
-  { src: '/images/gallery/word.jpg', caption: 'The Word', ratio: 'aspect-[4/3]' },
-  { src: '/images/gallery/children.jpg', caption: 'Grace Kids', ratio: 'aspect-[4/3]' },
-  { src: '/images/gallery/baptism.jpg', caption: 'Baptism Sundays', ratio: 'aspect-[3/4]' },
-  { src: '/images/gallery/youth.jpg', caption: 'Youth Ignite', ratio: 'aspect-[4/3]' },
-  { src: '/images/gallery/house.jpg', caption: 'Our House', ratio: 'aspect-[3/4]' },
-  { src: '/images/gallery/women.jpg', caption: 'Women of Grace', ratio: 'aspect-square' },
-  { src: '/images/gallery/outreach.jpg', caption: 'Feed the City', ratio: 'aspect-[3/4]' },
-  { src: '/images/gallery/communion.jpg', caption: 'At The Table', ratio: 'aspect-[4/5]' },
-  { src: '/images/gallery/worshipnight.jpg', caption: 'Night of Worship', ratio: 'aspect-[3/4]' },
+  { src: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85', caption: 'Sunday Worship', ratio: 'aspect-[4/5]' },
+  { src: 'https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1200&q=85', caption: "Men's Fellowship", ratio: 'aspect-[3/4]' },
+  { src: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=85', caption: 'The Cathedral Choir', ratio: 'aspect-[4/3]' },
+  { src: 'https://images.unsplash.com/photo-1490730141103-6cac27c604b4?auto=format&fit=crop&w=1200&q=85', caption: 'The Word', ratio: 'aspect-[4/3]' },
+  { src: 'https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=85', caption: 'Grace Kids', ratio: 'aspect-[4/3]' },
+  { src: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1200&q=85', caption: 'Baptism Sundays', ratio: 'aspect-[3/4]' },
+  { src: 'https://images.unsplash.com/photo-1504159506876-f8338247a14a?auto=format&fit=crop&w=1200&q=85', caption: 'Youth Ignite', ratio: 'aspect-[4/3]' },
+  { src: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85', caption: 'Our House', ratio: 'aspect-[3/4]' },
+  { src: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=85', caption: 'Women of Grace', ratio: 'aspect-square' },
+  { src: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=85', caption: 'Feed the City', ratio: 'aspect-[3/4]' },
+  { src: 'https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=85', caption: 'At The Table', ratio: 'aspect-[4/5]' },
+  { src: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85', caption: 'Night of Worship', ratio: 'aspect-[3/4]' },
 ];
 
 export default function Gallery() {
@@ -60,7 +60,7 @@ export default function Gallery() {
         <SectionHeader
           eyebrow="Life at Grace"
           title="Gallery"
-          subtitle="Moments of worship, family and joy from our house to yours — tap any photo to view it."
+          subtitle="Moments of worship, family and joy from our house to yours. tap any photo to view it."
         />
 
         <FadeIn>
@@ -71,7 +71,7 @@ export default function Gallery() {
                 type="button"
                 onClick={() => setIndex(i)}
                 aria-label={`View photo: ${img.caption}`}
-                className="group relative block w-full overflow-hidden rounded-2xl shadow-soft ring-1 ring-royal-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus:outline-none focus-visible:ring-4 focus-visible:ring-gold-400"
+                className="group relative block w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-blue-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-400"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -83,10 +83,10 @@ export default function Gallery() {
                 />
                 <span
                   aria-hidden
-                  className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-royal-950/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100"
+                  className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-blue-950/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100"
                 >
-                  <ZoomInIcon className="h-8 w-8 text-gold-300" />
-                  <span className="font-heading text-sm font-bold text-white">
+                  <ZoomInIcon className="h-8 w-8 text-sky-300" />
+                  <span className="font-sans text-sm font-bold text-white">
                     {img.caption}
                   </span>
                 </span>
@@ -105,7 +105,7 @@ export default function Gallery() {
           aria-label={`Photo: ${IMAGES[index].caption}`}
         >
           <div
-            className="absolute inset-0 bg-royal-950/95 backdrop-blur-sm"
+            className="absolute inset-0 bg-blue-950/95 backdrop-blur-sm"
             onClick={() => setIndex(null)}
           />
 
@@ -122,7 +122,7 @@ export default function Gallery() {
             type="button"
             onClick={prev}
             aria-label="Previous photo"
-            className="absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition hover:bg-gold-400 hover:text-royal-900 sm:left-6 sm:h-12 sm:w-12"
+            className="absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition hover:bg-sky-400 hover:text-blue-900 sm:left-6 sm:h-12 sm:w-12"
           >
             <ChevronLeftIcon className="h-6 w-6" />
           </button>
@@ -130,7 +130,7 @@ export default function Gallery() {
             type="button"
             onClick={next}
             aria-label="Next photo"
-            className="absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition hover:bg-gold-400 hover:text-royal-900 sm:right-6 sm:h-12 sm:w-12"
+            className="absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition hover:bg-sky-400 hover:text-blue-900 sm:right-6 sm:h-12 sm:w-12"
           >
             <ChevronRightIcon className="h-6 w-6" />
           </button>
@@ -143,10 +143,10 @@ export default function Gallery() {
               className="max-h-[76vh] w-auto max-w-full rounded-xl shadow-2xl ring-1 ring-white/10"
             />
             <figcaption className="mt-4 text-center">
-              <span className="font-heading text-lg font-bold text-white">
+              <span className="font-sans text-lg font-bold text-white">
                 {IMAGES[index].caption}
               </span>
-              <span className="ml-3 text-xs font-bold tracking-widest text-purple-200/60">
+              <span className="ml-3 text-xs font-bold tracking-widest text-blue-200/60">
                 {index + 1} / {IMAGES.length}
               </span>
             </figcaption>
