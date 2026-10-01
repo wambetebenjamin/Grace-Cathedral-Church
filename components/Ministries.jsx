@@ -55,7 +55,7 @@ export default function Ministries() {
     <section className="relative overflow-hidden bg-white py-24 lg:py-28">
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-40 top-10 h-[420px] w-[420px] rounded-full bg-orange-400/10 blur-3xl"
+        className="pointer-events-none absolute -right-40 top-10 h-[420px] w-[420px] rounded-full bg-zinc-400/10 blur-3xl"
       />
 
       <div className="container-site relative">
@@ -69,7 +69,7 @@ export default function Ministries() {
           {ministries.map((ministry, i) => (
             <FadeIn key={ministry.name} delay={(i % 3) * 110} className="h-full">
               <article className="group card relative h-full overflow-hidden p-8 transition-all duration-300 hover:shadow-xl">
-                <h3 className="mt-5 font-sans text-xl font-bold text-stone-900">
+                <h3 className="mt-5 font-sans text-xl font-bold text-zinc-900">
                   {ministry.name}
                 </h3>
                 <p className="mt-2.5 text-sm leading-relaxed text-slate-500">
@@ -81,7 +81,7 @@ export default function Ministries() {
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-2 text-[13px] font-black uppercase tracking-wider text-orange-700 transition-colors hover:text-stone-800"
+                  className="mt-5 inline-flex items-center gap-2 text-[13px] font-black uppercase tracking-wider text-zinc-700 transition-colors hover:text-zinc-800"
                 >
                   Join the team
                   <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" />

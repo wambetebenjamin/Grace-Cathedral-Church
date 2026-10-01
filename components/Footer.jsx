@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { navLinks, serviceSummary, site } from '@/lib/site';
 import {
   CheckIcon,
-  CrossIcon,
   FacebookIcon,
   InstagramIcon,
   LoaderIcon,
@@ -53,10 +52,10 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-stone-950 text-stone-100/80">
+    <footer className="relative overflow-hidden bg-zinc-950 text-zinc-100/80">
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-32 left-1/2 h-64 w-[720px] -translate-x-1/2 rounded-full bg-orange-400/5 blur-3xl"
+        className="pointer-events-none absolute -top-32 left-1/2 h-64 w-[720px] -translate-x-1/2 rounded-full bg-zinc-400/5 blur-3xl"
       />
 
       <div className="container-site relative">
@@ -65,13 +64,12 @@ export default function Footer() {
           <div>
             <a href="#home" className="flex items-center gap-3">
               <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10">
-                <CrossIcon className="h-6 w-6 text-orange-400" strokeWidth={2.2} />
               </span>
               <span className="leading-tight">
                 <span className="block font-sans text-lg font-black text-white">
                   Grace Cathedral
                 </span>
-                <span className="block text-[10px] font-bold uppercase tracking-[0.32em] text-orange-400">
+                <span className="block text-[10px] font-bold uppercase tracking-[0.32em] text-zinc-400">
                   Church · Nairobi
                 </span>
               </span>
@@ -88,7 +86,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-stone-100/80 ring-1 ring-white/10 transition-all duration-300 hover:bg-orange-400 hover:text-stone-900 hover:ring-orange-400"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-zinc-100/80 ring-1 ring-white/10 transition-all duration-300 hover:bg-zinc-400 hover:text-zinc-900 hover:ring-zinc-400"
                 >
                   <Icon className="h-5 w-5" />
                 </a>
@@ -98,7 +96,7 @@ export default function Footer() {
 
           {/* Quick links */}
           <nav aria-label="Footer quick links">
-            <h3 className="text-[11px] font-black uppercase tracking-[0.28em] text-orange-400">
+            <h3 className="text-[11px] font-black uppercase tracking-[0.28em] text-zinc-400">
               Quick Links
             </h3>
             <ul className="mt-5 space-y-2.5 text-sm">
@@ -106,7 +104,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="font-semibold transition-colors hover:text-orange-300"
+                    className="font-semibold transition-colors hover:text-zinc-300"
                   >
                     {link.label}
                   </a>
@@ -117,7 +115,7 @@ export default function Footer() {
                   href={site.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold transition-colors hover:text-orange-300"
+                  className="font-semibold transition-colors hover:text-zinc-300"
                 >
                   Watch Live
                 </a>
@@ -127,7 +125,7 @@ export default function Footer() {
 
           {/* Service times */}
           <div>
-            <h3 className="text-[11px] font-black uppercase tracking-[0.28em] text-orange-400">
+            <h3 className="text-[11px] font-black uppercase tracking-[0.28em] text-zinc-400">
               Service Times
             </h3>
             <ul className="mt-5 space-y-3.5 text-sm">
@@ -148,7 +146,7 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-[11px] font-black uppercase tracking-[0.28em] text-orange-400">
+            <h3 className="text-[11px] font-black uppercase tracking-[0.28em] text-zinc-400">
               The Grace Weekly
             </h3>
             <p className="mt-5 text-sm leading-relaxed">
@@ -158,7 +156,7 @@ export default function Footer() {
               <label htmlFor="newsletter-email" className="sr-only">
                 Email address
               </label>
-              <div className="flex overflow-hidden rounded-full bg-white/10 ring-1 ring-white/15 focus-within:ring-2 focus-within:ring-orange-400">
+              <div className="flex overflow-hidden rounded-full bg-white/10 ring-1 ring-white/15 focus-within:ring-2 focus-within:ring-zinc-400">
                 <input
                   id="newsletter-email"
                   type="email"
@@ -168,13 +166,13 @@ export default function Footer() {
                     if (status !== 'idle') setStatus('idle');
                   }}
                   placeholder="you@example.com"
-                  className="w-full bg-transparent px-5 py-3 text-sm text-white placeholder-stone-200/40 focus:outline-none"
+                  className="w-full bg-transparent px-5 py-3 text-sm text-white placeholder-zinc-200/40 focus:outline-none"
                 />
                 <button
                   type="submit"
                   disabled={status === 'sending'}
                   aria-label="Subscribe to newsletter"
-                  className="flex items-center gap-2 bg-orange-700 px-5 text-stone-900 transition hover:brightness-110 disabled:opacity-60"
+                  className="flex items-center gap-2 bg-zinc-700 px-5 text-zinc-900 transition hover:brightness-110 disabled:opacity-60"
                 >
                   {status === 'sending' ? (
                     <LoaderIcon className="h-4 w-4 animate-spin" />
@@ -184,14 +182,14 @@ export default function Footer() {
                 </button>
               </div>
               {status === 'success' && (
-                <p className="mt-3 flex items-center gap-1.5 text-xs font-bold text-orange-300">
+                <p className="mt-3 flex items-center gap-1.5 text-xs font-bold text-zinc-300">
                   <CheckIcon className="h-4 w-4" /> {message}
                 </p>
               )}
               {status === 'error' && (
                 <p className="mt-3 text-xs font-bold text-red-300">{message}</p>
               )}
-              <p className="mt-3 text-[11px] leading-relaxed text-stone-200/50">
+              <p className="mt-3 text-[11px] leading-relaxed text-zinc-200/50">
                 No spam. just grace. Unsubscribe anytime.
               </p>
             </form>
@@ -199,7 +197,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar. extra bottom padding on mobile clears the sticky action bar */}
-        <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 pb-24 text-center text-xs text-stone-200/60 sm:flex-row sm:pb-6 sm:text-left">
+        <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 pb-24 text-center text-xs text-zinc-200/60 sm:flex-row sm:pb-6 sm:text-left">
           <p>
             © {new Date().getFullYear()} Grace Cathedral Church, Nairobi, Kenya. All
             rights reserved.

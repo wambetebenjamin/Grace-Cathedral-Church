@@ -17,14 +17,14 @@ export default function SectionHeader({
     >
       <p
         className={`flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.32em] sm:text-xs ${
-          isDark ? 'text-orange-400' : 'text-orange-700'
+          isDark ? 'text-zinc-400' : 'text-zinc-700'
         } ${align === 'center' ? 'justify-center' : ''}`}
       >
         {eyebrow}
       </p>
       <h2
         className={`mt-4 font-sans text-3xl font-black leading-tight sm:text-4xl lg:text-[2.75rem] ${
-          isDark ? 'text-white' : 'text-stone-900'
+          isDark ? 'text-white' : 'text-zinc-900'
         }`}
       >
         {title}
@@ -32,7 +32,7 @@ export default function SectionHeader({
       {subtitle && (
         <p
           className={`mt-5 text-base leading-relaxed ${
-            isDark ? 'text-stone-100/80' : 'text-slate-500'
+            isDark ? 'text-zinc-100/80' : 'text-slate-500'
           }`}
         >
           {subtitle}
@@ -42,12 +42,12 @@ export default function SectionHeader({
   );
 }
 
-/** Thin section rule placed between page sections. */
+
 export function GoldRule() {
   return (
     <div
       aria-hidden
-      className="h-px w-full bg-gradient-to-r from-transparent via-orange-500/70 to-transparent"
+      className="h-px w-full bg-zinc-300"
     />
   );
 }

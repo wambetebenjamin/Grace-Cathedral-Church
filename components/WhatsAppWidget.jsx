@@ -24,14 +24,14 @@ export default function WhatsAppWidget() {
       <div className="flex items-center">
         {/* Tooltip */}
         <div
-          className={`pointer-events-none absolute right-full mr-3 flex items-center gap-2 rounded-2xl bg-white py-2.5 pl-4 pr-2.5 shadow-xl ring-1 ring-orange-400/50 transition-all duration-300 ${
+          className={`pointer-events-none absolute right-full mr-3 flex items-center gap-2 rounded-2xl bg-white py-2.5 pl-4 pr-2.5 shadow-xl ring-1 ring-zinc-400/50 transition-all duration-300 ${
             autoTip && !dismissed
               ? 'translate-x-0 opacity-100'
               : 'translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 group-focus-within:translate-x-0 group-focus-within:opacity-100'
           }`}
           role="status"
         >
-          <span className="whitespace-nowrap text-sm font-bold text-stone-900">
+          <span className="whitespace-nowrap text-sm font-bold text-zinc-900">
             Talk to our Team 🙏
           </span>
           {autoTip && !dismissed && (
@@ -55,16 +55,16 @@ export default function WhatsAppWidget() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat with Grace Cathedral on WhatsApp"
-          className="relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-orange-300 via-orange-400 to-orange-600 text-stone-900 shadow-xl transition-transform duration-300 hover:scale-110 focus:outline-none focus-visible:ring-4 focus-visible:ring-orange-300 active:scale-95"
+          className="relative flex h-14 w-14 items-center justify-center rounded-full bg-zinc-800 text-zinc-900 shadow-xl transition-transform duration-300 hover:scale-110 focus:outline-none focus-visible:ring-4 focus-visible:ring-zinc-300 active:scale-95"
         >
           {/* Purple pulse */}
           <span
             aria-hidden
-            className="animate-pulse-ring absolute inset-0 rounded-full bg-stone-700/60"
+            className="animate-pulse-ring absolute inset-0 rounded-full bg-zinc-700/60"
           />
           <span
             aria-hidden
-            className="absolute inset-0 rounded-full ring-2 ring-orange-300/60"
+            className="absolute inset-0 rounded-full ring-2 ring-zinc-300/60"
           />
           <WhatsAppIcon className="relative h-7 w-7" />
         </a>

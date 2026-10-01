@@ -35,30 +35,30 @@ body {
 
   /* Primary button */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-orange-700 px-8 py-3.5 text-sm font-black uppercase tracking-wide text-stone-900 shadow-sm transition-all duration-300 hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-zinc-700 px-8 py-3.5 text-sm font-black uppercase tracking-wide text-zinc-900 shadow-sm transition-all duration-300 hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-300 focus-visible:ring-offset-2 active:translate-y-0;
   }
 
   /* Ghost button over dark imagery */
   .btn-outline-light {
-    @apply inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-white/70 px-8 py-3 text-sm font-black uppercase tracking-wide text-white transition-all duration-300 hover:border-orange-400 hover:text-orange-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-white/70 px-8 py-3 text-sm font-black uppercase tracking-wide text-white transition-all duration-300 hover:border-zinc-400 hover:text-zinc-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:translate-y-0;
   }
 
-  /* Solid stone button */
-  .btn-stone {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-stone-700 px-6 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:bg-stone-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-500 focus-visible:ring-offset-2 active:translate-y-0;
+  /* Solid zinc button */
+  .btn-zinc {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-zinc-700 px-6 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:bg-zinc-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-500 focus-visible:ring-offset-2 active:translate-y-0;
   }
 
-  /* Outlined stone button */
-  .btn-outline-stone {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-stone-700/30 px-6 py-2.5 text-sm font-bold text-stone-800 transition-all duration-300 hover:border-stone-700 hover:bg-stone-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-500/40 active:translate-y-0;
+  /* Outlined zinc button */
+  .btn-outline-zinc {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-zinc-700/30 px-6 py-2.5 text-sm font-bold text-zinc-800 transition-all duration-300 hover:border-zinc-700 hover:bg-zinc-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-500/40 active:translate-y-0;
   }
 
   .card {
-    @apply rounded-lg bg-white shadow-sm ring-1 ring-stone-900/5;
+    @apply rounded-lg bg-white shadow-sm ring-1 ring-zinc-900/5;
   }
 
   .input {
-    @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 transition focus:border-stone-600 focus:outline-none focus:ring-4 focus:ring-stone-600/15;
+    @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 transition focus:border-zinc-600 focus:outline-none focus:ring-4 focus:ring-zinc-600/15;
   }
 }
 
@@ -148,3 +148,6 @@ body {
 
 /* Quiet, editorial surfaces: avoid decorative shine and artificial depth. */
 .blur-3xl { display: none; }
+
+/* Monochrome editorial theme: no decorative colour washes or glossy effects. */
+.bg-gradient-to-b, .bg-gradient-to-t, .bg-gradient-to-r, .bg-gradient-to-br { background-image: none !important; }

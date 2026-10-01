@@ -71,7 +71,7 @@ export default function Gallery() {
                 type="button"
                 onClick={() => setIndex(i)}
                 aria-label={`View photo: ${img.caption}`}
-                className="group relative block w-full overflow-hidden rounded-lg shadow-sm ring-1 ring-stone-900/5 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-orange-400"
+                className="group relative block w-full overflow-hidden rounded-lg shadow-sm ring-1 ring-zinc-900/5 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-zinc-400"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -83,9 +83,9 @@ export default function Gallery() {
                 />
                 <span
                   aria-hidden
-                  className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-stone-950/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100"
+                  className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-zinc-950/60 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100"
                 >
-                  <ZoomInIcon className="h-8 w-8 text-orange-300" />
+                  <ZoomInIcon className="h-8 w-8 text-zinc-300" />
                   <span className="font-sans text-sm font-bold text-white">
                     {img.caption}
                   </span>
@@ -105,7 +105,7 @@ export default function Gallery() {
           aria-label={`Photo: ${IMAGES[index].caption}`}
         >
           <div
-            className="absolute inset-0 bg-stone-950/95 backdrop-blur-sm"
+            className="absolute inset-0 bg-zinc-950/95 backdrop-blur-sm"
             onClick={() => setIndex(null)}
           />
 
@@ -122,7 +122,7 @@ export default function Gallery() {
             type="button"
             onClick={prev}
             aria-label="Previous photo"
-            className="absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition hover:bg-orange-400 hover:text-stone-900 sm:left-6 sm:h-12 sm:w-12"
+            className="absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition hover:bg-zinc-400 hover:text-zinc-900 sm:left-6 sm:h-12 sm:w-12"
           >
             <ChevronLeftIcon className="h-6 w-6" />
           </button>
@@ -130,7 +130,7 @@ export default function Gallery() {
             type="button"
             onClick={next}
             aria-label="Next photo"
-            className="absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition hover:bg-orange-400 hover:text-stone-900 sm:right-6 sm:h-12 sm:w-12"
+            className="absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/20 transition hover:bg-zinc-400 hover:text-zinc-900 sm:right-6 sm:h-12 sm:w-12"
           >
             <ChevronRightIcon className="h-6 w-6" />
           </button>
@@ -146,7 +146,7 @@ export default function Gallery() {
               <span className="font-sans text-lg font-bold text-white">
                 {IMAGES[index].caption}
               </span>
-              <span className="ml-3 text-xs font-bold tracking-widest text-stone-200/60">
+              <span className="ml-3 text-xs font-bold tracking-widest text-zinc-200/60">
                 {index + 1} / {IMAGES.length}
               </span>
             </figcaption>

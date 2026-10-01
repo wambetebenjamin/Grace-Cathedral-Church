@@ -107,9 +107,9 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="contact-name"
-                    className="mb-1.5 block text-[13px] font-bold text-stone-900"
+                    className="mb-1.5 block text-[13px] font-bold text-zinc-900"
                   >
-                    Name <span className="text-orange-600">*</span>
+                    Name <span className="text-zinc-600">*</span>
                   </label>
                   <input
                     id="contact-name"
@@ -128,9 +128,9 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="contact-email"
-                    className="mb-1.5 block text-[13px] font-bold text-stone-900"
+                    className="mb-1.5 block text-[13px] font-bold text-zinc-900"
                   >
-                    Email <span className="text-orange-600">*</span>
+                    Email <span className="text-zinc-600">*</span>
                   </label>
                   <input
                     id="contact-email"
@@ -149,7 +149,7 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="contact-phone"
-                    className="mb-1.5 block text-[13px] font-bold text-stone-900"
+                    className="mb-1.5 block text-[13px] font-bold text-zinc-900"
                   >
                     Phone
                   </label>
@@ -170,9 +170,9 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="contact-message"
-                    className="mb-1.5 block text-[13px] font-bold text-stone-900"
+                    className="mb-1.5 block text-[13px] font-bold text-zinc-900"
                   >
-                    Message <span className="text-orange-600">*</span>
+                    Message <span className="text-zinc-600">*</span>
                   </label>
                   <textarea
                     id="contact-message"
@@ -203,7 +203,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="btn-stone mt-7 w-full disabled:cursor-not-allowed disabled:opacity-60"
+                className="btn-zinc mt-7 w-full disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {status === 'sending' ? (
                   <>
@@ -234,13 +234,13 @@ export default function Contact() {
           {/* ── Details + map ────────────────────────────────── */}
           <FadeIn delay={140} className="flex flex-col gap-8">
             <div className="card p-7 sm:p-9">
-              <h3 className="font-sans text-xl font-black text-stone-900">
+              <h3 className="font-sans text-xl font-black text-zinc-900">
                 Grace Cathedral Church
               </h3>
               <ul className="mt-5 space-y-4">
                 {contactItems.map((item) => (
                   <li key={item.label} className="flex items-start gap-4">
-                    <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-stone-50 text-stone-700 ring-1 ring-stone-100">
+                    <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-zinc-50 text-zinc-700 ring-1 ring-zinc-100">
                       <item.Icon className="h-5 w-5" />
                     </span>
                     <span>
@@ -252,12 +252,12 @@ export default function Contact() {
                           href={item.href}
                           target={item.href.startsWith('http') ? '_blank' : undefined}
                           rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-sm font-semibold text-stone-800 transition hover:text-orange-700"
+                          className="text-sm font-semibold text-zinc-800 transition hover:text-zinc-700"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <span className="text-sm font-semibold text-stone-800">{item.value}</span>
+                        <span className="text-sm font-semibold text-zinc-800">{item.value}</span>
                       )}
                     </span>
                   </li>

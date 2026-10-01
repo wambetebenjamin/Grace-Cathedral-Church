@@ -5,7 +5,6 @@ import {
   BookOpenIcon,
   FlameIcon,
   MapPinIcon,
-  SparklesIcon,
   SunIcon,
 } from './Icons';
 
@@ -24,7 +23,6 @@ const services = [
     time: '10:30 AM',
     location: 'Main Sanctuary',
     note: 'Vibrant worship with the full choir, and Grace Kids running alongside.',
-    Icon: SparklesIcon,
   },
   {
     name: 'Wednesday Bible Study',
@@ -46,15 +44,15 @@ const services = [
 
 export default function ServiceTimes() {
   return (
-    <section className="relative overflow-hidden bg-stone-900 py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-zinc-900 py-24 lg:py-28">
       {/* decorative glows */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -left-40 top-0 h-[420px] w-[420px] rounded-full bg-orange-400/10 blur-3xl"
+        className="pointer-events-none absolute -left-40 top-0 h-[420px] w-[420px] rounded-full bg-zinc-400/10 blur-3xl"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-stone-500/20 blur-3xl"
+        className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-zinc-500/20 blur-3xl"
       />
 
       <div className="container-site relative">
@@ -69,17 +67,17 @@ export default function ServiceTimes() {
           {services.map((service, i) => (
             <FadeIn key={service.name} delay={i * 120} className="h-full">
               <article className="card group relative h-full overflow-hidden p-7 text-center transition-all duration-300 hover:shadow-xl">
-                <p className="mt-1 text-[11px] font-black uppercase tracking-[0.28em] text-orange-700">
+                <p className="mt-1 text-[11px] font-black uppercase tracking-[0.28em] text-zinc-700">
                   {service.day}
                 </p>
-                <h3 className="mt-1.5 font-sans text-xl font-bold leading-snug text-stone-900">
+                <h3 className="mt-1.5 font-sans text-xl font-bold leading-snug text-zinc-900">
                   {service.name}
                 </h3>
-                <p className="mt-3 font-sans text-[2rem] font-black leading-none text-stone-800">
+                <p className="mt-3 font-sans text-[2rem] font-black leading-none text-zinc-800">
                   {service.time}
                 </p>
                 <p className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-slate-500">
-                  <MapPinIcon className="h-3.5 w-3.5 text-orange-600" />
+                  <MapPinIcon className="h-3.5 w-3.5 text-zinc-600" />
                   {service.location}
                 </p>
                 <p className="mt-3 text-[13px] leading-relaxed text-slate-500">
@@ -91,11 +89,11 @@ export default function ServiceTimes() {
         </div>
 
         <FadeIn delay={200}>
-          <p className="mt-12 text-center text-sm text-stone-100/80">
+          <p className="mt-12 text-center text-sm text-zinc-100/80">
             New here?{' '}
             <a
               href="#contact"
-              className="inline-flex items-center gap-1.5 font-bold text-orange-300 underline decoration-orange-500/40 underline-offset-4 transition hover:text-orange-200 hover:decoration-orange-400"
+              className="inline-flex items-center gap-1.5 font-bold text-zinc-300 underline decoration-zinc-500/40 underline-offset-4 transition hover:text-zinc-200 hover:decoration-zinc-400"
             >
               Plan your visit <ArrowRightIcon className="h-4 w-4" />
             </a>{' '}

@@ -90,19 +90,19 @@ export default function Sermons() {
                       />
                       <div
                         aria-hidden
-                        className="absolute inset-0 bg-stone-900/60"
+                        className="absolute inset-0 bg-zinc-900/60"
                       />
-                      <span className="absolute left-4 top-4 rounded-full bg-orange-400 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-stone-900 shadow">
+                      <span className="absolute left-4 top-4 rounded-full bg-zinc-400 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-900 shadow">
                         {sermon.series}
                       </span>
-                      <span className="absolute bottom-4 right-4 rounded-full bg-stone-950/70 px-3 py-1 text-[11px] font-bold text-stone-100 backdrop-blur">
+                      <span className="absolute bottom-4 right-4 rounded-full bg-zinc-950/70 px-3 py-1 text-[11px] font-bold text-zinc-100 backdrop-blur">
                         {sermon.duration}
                       </span>
                     </div>
 
                     {/* Body */}
                     <div className="flex flex-1 flex-col p-6">
-                      <h3 className="font-sans text-xl font-bold leading-snug text-stone-900 transition-colors group-hover:text-stone-700">
+                      <h3 className="font-sans text-xl font-bold leading-snug text-zinc-900 transition-colors group-hover:text-zinc-700">
                         {sermon.title}
                       </h3>
                       <p className="mt-1.5 text-[13px] italic text-slate-400">
@@ -110,11 +110,11 @@ export default function Sermons() {
                       </p>
                       <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[13px] font-semibold text-slate-500">
                         <span className="inline-flex items-center gap-1.5">
-                          <UsersIcon className="h-4 w-4 text-orange-600" />
+                          <UsersIcon className="h-4 w-4 text-zinc-600" />
                           {sermon.pastor}
                         </span>
                         <span className="inline-flex items-center gap-1.5">
-                          <CalendarIcon className="h-4 w-4 text-orange-600" />
+                          <CalendarIcon className="h-4 w-4 text-zinc-600" />
                           {formatDate(sermon.date)}
                         </span>
                       </div>
@@ -124,7 +124,7 @@ export default function Sermons() {
                           href={sermon.youtube}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="btn-stone flex-1"
+                          className="btn-zinc flex-1"
                           aria-label={`Watch ${sermon.title}`}
                         >
                           <PlayIcon className="h-4 w-4" />
@@ -133,7 +133,7 @@ export default function Sermons() {
                         <a
                           href={sermon.pdf || '/resources/weekly-bible-study-guide.pdf'}
                           download
-                          className="btn-outline-stone w-full"
+                          className="btn-outline-zinc w-full"
                           aria-label={`Download notes for ${sermon.title}`}
                         >
                           PDF notes
@@ -142,7 +142,7 @@ export default function Sermons() {
                           href={sermon.audio}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="btn-outline-stone flex-1"
+                          className="btn-outline-zinc flex-1"
                           aria-label={`Listen to ${sermon.title}`}
                         >
                           <HeadphonesIcon className="h-4 w-4" />
@@ -161,7 +161,7 @@ export default function Sermons() {
               href={site.youtube}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-bold text-stone-800 underline decoration-orange-400 decoration-2 underline-offset-8 transition hover:text-stone-600"
+              className="inline-flex items-center gap-2 text-sm font-bold text-zinc-800 underline decoration-zinc-400 decoration-2 underline-offset-8 transition hover:text-zinc-600"
             >
               Browse the full sermon archive on YouTube
               <ArrowRightIcon className="h-4 w-4" />

@@ -36,16 +36,16 @@ export default function Leadership() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {leaders.map((leader, index) => (
             <FadeIn key={leader.name} delay={index * 90}>
-              <article className="overflow-hidden border border-stone-200 bg-white">
+              <article className="overflow-hidden border border-zinc-200 bg-white">
                 <img
                   src={leader.image}
                   alt={`${leader.name}, ${leader.role}`}
                   loading="lazy"
                   className="aspect-[4/5] w-full object-cover"
                 />
-                <div className="border-t-4 border-orange-600 p-5">
-                  <h3 className="font-sans text-lg font-bold text-stone-900">{leader.name}</h3>
-                  <p className="mt-1 text-sm text-stone-500">{leader.role}</p>
+                <div className="border-t-4 border-zinc-600 p-5">
+                  <h3 className="font-sans text-lg font-bold text-zinc-900">{leader.name}</h3>
+                  <p className="mt-1 text-sm text-zinc-500">{leader.role}</p>
                 </div>
               </article>
             </FadeIn>
