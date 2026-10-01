@@ -88,8 +88,8 @@ export default function Giving() {
 
           {/* M-Pesa card */}
           <FadeIn delay={140}>
-            <div className="mt-12 rounded-3xl border border-zinc-400/25 bg-white/[0.06] p-8 shadow-sm backdrop-blur sm:p-10">
-              <p className="text-center text-[11px] font-black uppercase tracking-[0.3em] text-zinc-300">
+            <div className="mt-12 rounded-lg border border-emerald-300 bg-emerald-50 p-8 shadow-sm sm:p-10">
+              <p className="text-center text-[11px] font-black uppercase tracking-[0.3em] text-emerald-800">
                 M-Pesa Paybill
               </p>
               <button
@@ -98,10 +98,10 @@ export default function Giving() {
                 className="group mx-auto mt-4 flex flex-col items-center gap-2"
                 aria-label={`Copy M-Pesa paybill number ${site.mpesaPaybill}`}
               >
-                <span className="font-sans text-4xl font-black tracking-[0.12em] text-zinc-400 transition group-hover:text-zinc-300 sm:text-5xl">
+                <span className="font-sans text-4xl font-black tracking-[0.12em] text-emerald-900 transition group-hover:text-emerald-700 sm:text-5xl">
                   {site.mpesaPaybill}
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-zinc-200/70 transition group-hover:text-zinc-300">
+                <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-emerald-800 transition group-hover:text-emerald-700">
                   {copied === 'paybill' ? (
                     <>
                       <CheckIcon className="h-3.5 w-3.5" /> Copied!
@@ -114,14 +114,14 @@ export default function Giving() {
                 </span>
               </button>
 
-              <div className="mt-6 flex flex-col items-center gap-1.5 border-t border-white/10 pt-6 sm:flex-row sm:justify-center sm:gap-4">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-200/70">
+              <div className="mt-6 flex flex-col items-center gap-1.5 border-t border-emerald-200 pt-6 sm:flex-row sm:justify-center sm:gap-4">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-800">
                   Account:
                 </span>
                 <button
                   type="button"
                   onClick={() => copy(site.mpesaAccount, 'account')}
-                  className="inline-flex items-center gap-2 font-sans text-lg font-bold text-white transition hover:text-zinc-300"
+                  className="inline-flex items-center gap-2 font-sans text-lg font-bold text-emerald-900 transition hover:text-emerald-700"
                   aria-label={`Copy account name ${site.mpesaAccount}`}
                 >
                   {site.mpesaAccount}
