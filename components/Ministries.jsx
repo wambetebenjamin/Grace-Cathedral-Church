@@ -55,7 +55,7 @@ export default function Ministries() {
     <section className="relative overflow-hidden bg-white py-24 lg:py-28">
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-40 top-10 h-[420px] w-[420px] rounded-full bg-sky-400/10 blur-3xl"
+        className="pointer-events-none absolute -right-40 top-10 h-[420px] w-[420px] rounded-full bg-orange-400/10 blur-3xl"
       />
 
       <div className="container-site relative">
@@ -68,15 +68,8 @@ export default function Ministries() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {ministries.map((ministry, i) => (
             <FadeIn key={ministry.name} delay={(i % 3) * 110} className="h-full">
-              <article className="group card relative h-full overflow-hidden p-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
-                <span
-                  aria-hidden
-                  className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-sky-300 via-sky-500 to-sky-300 transition-transform duration-500 group-hover:scale-x-100"
-                />
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-700 to-blue-950 text-sky-400 shadow-md">
-                  <ministry.Icon className="h-7 w-7" />
-                </div>
-                <h3 className="mt-5 font-sans text-xl font-bold text-blue-900">
+              <article className="group card relative h-full overflow-hidden p-8 transition-all duration-300 hover:shadow-xl">
+                <h3 className="mt-5 font-sans text-xl font-bold text-stone-900">
                   {ministry.name}
                 </h3>
                 <p className="mt-2.5 text-sm leading-relaxed text-slate-500">
@@ -88,7 +81,7 @@ export default function Ministries() {
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-2 text-[13px] font-black uppercase tracking-wider text-sky-700 transition-colors hover:text-blue-800"
+                  className="mt-5 inline-flex items-center gap-2 text-[13px] font-black uppercase tracking-wider text-orange-700 transition-colors hover:text-stone-800"
                 >
                   Join the team
                   <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" />

@@ -19,7 +19,7 @@ function dateParts(iso) {
 function EventSkeleton() {
   return (
     <div className="flex gap-6">
-      <div className="skeleton h-16 w-16 shrink-0 rounded-2xl" />
+      <div className="skeleton h-16 w-16 shrink-0 rounded-lg" />
       <div className="card flex-1 space-y-3 p-6">
         <div className="skeleton h-4 w-32 rounded-full" />
         <div className="skeleton h-6 w-2/3 rounded-lg" />
@@ -66,7 +66,7 @@ export default function Events() {
           {/* Timeline spine */}
           <div
             aria-hidden
-            className="absolute bottom-6 left-[31px] top-6 w-px bg-gradient-to-b from-sky-400 via-sky-500/60 to-transparent"
+            className="absolute bottom-6 left-[31px] top-6 w-px bg-gradient-to-b from-orange-400 via-orange-500/60 to-transparent"
           />
 
           <ol className="space-y-8">
@@ -79,19 +79,19 @@ export default function Events() {
                       <FadeIn delay={i * 100}>
                         <div className="relative flex gap-5 sm:gap-7">
                           {/* Date badge */}
-                          <div className="relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-blue-800 to-blue-950 shadow-md ring-2 ring-sky-400/80">
-                            <span className="font-sans text-2xl font-black leading-none text-sky-400">
+                          <div className="relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 shadow-sm ring-2 ring-orange-400/80">
+                            <span className="font-sans text-2xl font-black leading-none text-orange-400">
                               {day}
                             </span>
-                            <span className="mt-0.5 text-[10px] font-black uppercase tracking-[0.18em] text-blue-200">
+                            <span className="mt-0.5 text-[10px] font-black uppercase tracking-[0.18em] text-stone-200">
                               {month}
                             </span>
                           </div>
 
                           {/* Card */}
-                          <article className="card group flex-1 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7">
+                          <article className="card group flex-1 p-6 transition-all duration-300 sm:p-7">
                             <div className="flex flex-wrap items-center gap-3">
-                              <span className="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-blue-700 ring-1 ring-blue-100">
+                              <span className="rounded-full bg-stone-50 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-stone-700 ring-1 ring-stone-100">
                                 {event.tag}
                               </span>
                               <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
@@ -99,17 +99,17 @@ export default function Events() {
                               </span>
                             </div>
 
-                            <h3 className="mt-3 font-sans text-xl font-bold leading-snug text-blue-900 sm:text-2xl">
+                            <h3 className="mt-3 font-sans text-xl font-bold leading-snug text-stone-900 sm:text-2xl">
                               {event.name}
                             </h3>
 
                             <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-[13px] font-semibold text-slate-500">
                               <span className="inline-flex items-center gap-1.5">
-                                <ClockIcon className="h-4 w-4 text-sky-600" />
+                                <ClockIcon className="h-4 w-4 text-orange-600" />
                                 {event.time}
                               </span>
                               <span className="inline-flex items-center gap-1.5">
-                                <MapPinIcon className="h-4 w-4 text-sky-600" />
+                                <MapPinIcon className="h-4 w-4 text-orange-600" />
                                 {event.location}
                               </span>
                             </div>
@@ -125,7 +125,7 @@ export default function Events() {
                                 )}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="btn-outline-blue"
+                                className="btn-outline-stone"
                               >
                                 Register
                                 <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

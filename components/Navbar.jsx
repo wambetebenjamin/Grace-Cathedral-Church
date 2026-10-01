@@ -45,7 +45,7 @@ export default function Navbar() {
       <header
         className={`sticky top-0 z-50 bg-white/95 backdrop-blur-md transition-all duration-300 ${
           scrolled
-            ? 'border-b border-blue-900/10 shadow-lg shadow-blue-900/10'
+            ? 'border-b border-stone-900/10 shadow-lg shadow-stone-900/10'
             : 'border-b border-transparent'
         }`}
       >
@@ -55,14 +55,14 @@ export default function Navbar() {
         >
           {/* Logo */}
           <a href="#home" className="group flex items-center gap-3" aria-label="Grace Cathedral Church. home">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-blue-700 to-blue-950 shadow-md transition-transform duration-300 group-hover:scale-105">
-              <CrossIcon className="h-6 w-6 text-sky-400" strokeWidth={2.2} />
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-stone-800 shadow-sm transition-transform duration-300 group-hover:scale-105">
+              <CrossIcon className="h-6 w-6 text-orange-400" strokeWidth={2.2} />
             </span>
             <span className="leading-tight">
-              <span className="block font-sans text-lg font-black text-blue-900">
+              <span className="block font-sans text-lg font-black text-stone-900">
                 Grace Cathedral
               </span>
-              <span className="block text-[10px] font-bold uppercase tracking-[0.32em] text-sky-700">
+              <span className="block text-[10px] font-bold uppercase tracking-[0.32em] text-orange-700">
                 Church · Nairobi
               </span>
             </span>
@@ -78,7 +78,7 @@ export default function Navbar() {
                   <li key={link.href} className="ml-3">
                     <a
                       href={link.href}
-                      className="inline-flex items-center rounded-full bg-gradient-to-b from-sky-300 via-sky-400 to-sky-600 px-6 py-2.5 text-sm font-black uppercase tracking-wide text-blue-900 shadow-sky transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110"
+                      className="inline-flex items-center rounded-full bg-orange-700 px-6 py-2.5 text-sm font-black uppercase tracking-wide text-stone-900 shadow-orange transition-all duration-300 hover:brightness-110"
                     >
                       {link.label}
                     </a>
@@ -90,12 +90,12 @@ export default function Navbar() {
                   <a
                     href={link.href}
                     className={`relative block rounded-full px-4 py-2 text-sm font-bold transition-colors ${
-                      isActive ? 'text-blue-800' : 'text-slate-600 hover:text-blue-800'
+                      isActive ? 'text-stone-800' : 'text-slate-600 hover:text-stone-800'
                     }`}
                   >
                     {link.label}
                     <span
-                      className={`absolute inset-x-4 -bottom-0.5 h-0.5 rounded-full bg-sky-400 transition-transform duration-300 ${
+                      className={`absolute inset-x-4 -bottom-0.5 h-0.5 rounded-full bg-orange-400 transition-transform duration-300 ${
                         isActive ? 'scale-x-100' : 'scale-x-0'
                       }`}
                       aria-hidden
@@ -112,7 +112,7 @@ export default function Navbar() {
             onClick={() => setOpen(true)}
             aria-label="Open navigation menu"
             aria-expanded={open}
-            className="flex h-11 w-11 items-center justify-center rounded-xl text-blue-900 ring-1 ring-blue-900/10 transition hover:bg-blue-50 lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-xl text-stone-900 ring-1 ring-stone-900/10 transition hover:bg-stone-50 lg:hidden"
           >
             <MenuIcon className="h-6 w-6" />
           </button>
@@ -125,13 +125,13 @@ export default function Navbar() {
         aria-hidden={!open}
       >
         <div
-          className={`absolute inset-0 bg-blue-950/60 backdrop-blur-sm transition-opacity duration-300 ${
+          className={`absolute inset-0 bg-stone-950/60 backdrop-blur-sm transition-opacity duration-300 ${
             open ? 'opacity-100' : 'opacity-0'
           }`}
           onClick={() => setOpen(false)}
         />
         <aside
-          className={`absolute right-0 top-0 flex h-full w-[86%] max-w-sm flex-col overflow-y-auto bg-gradient-to-b from-blue-900 via-blue-950 to-blue-950 shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          className={`absolute right-0 top-0 flex h-full w-[86%] max-w-sm flex-col overflow-y-auto bg-gradient-to-b from-stone-900 via-stone-950 to-stone-950 shadow-lg transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
             open ? 'translate-x-0' : 'translate-x-full'
           }`}
           role="dialog"
@@ -142,7 +142,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between border-b border-white/10 px-6 py-5">
             <span className="flex items-center gap-2.5">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10">
-                <CrossIcon className="h-5 w-5 text-sky-400" strokeWidth={2.2} />
+                <CrossIcon className="h-5 w-5 text-orange-400" strokeWidth={2.2} />
               </span>
               <span className="font-sans text-base font-black text-white">
                 Grace Cathedral
@@ -152,7 +152,7 @@ export default function Navbar() {
               type="button"
               onClick={() => setOpen(false)}
               aria-label="Close navigation menu"
-              className="flex h-10 w-10 items-center justify-center rounded-xl text-blue-100 ring-1 ring-white/15 transition hover:bg-white/10"
+              className="flex h-10 w-10 items-center justify-center rounded-xl text-stone-100 ring-1 ring-white/15 transition hover:bg-white/10"
             >
               <CloseIcon className="h-5 w-5" />
             </button>
@@ -169,13 +169,13 @@ export default function Navbar() {
                     open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                   } ${
                     active === link.href.slice(1)
-                      ? 'bg-white/10 text-sky-300'
-                      : 'text-white hover:bg-white/5 hover:text-sky-200'
+                      ? 'bg-white/10 text-orange-300'
+                      : 'text-white hover:bg-white/5 hover:text-orange-200'
                   }`}
                   style={{ transitionDelay: open ? `${120 + i * 60}ms` : '0ms' }}
                 >
                   {link.label}
-                  <span className="text-xs font-sans font-bold uppercase tracking-widest text-sky-500/70">
+                  <span className="text-xs font-sans font-bold uppercase tracking-widest text-orange-500/70">
                     0{i + 1}
                   </span>
                 </a>
@@ -189,7 +189,7 @@ export default function Navbar() {
               href={site.youtube}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2.5 rounded-full bg-gradient-to-b from-sky-300 via-sky-400 to-sky-600 px-6 py-3 text-sm font-black uppercase tracking-wide text-blue-900 shadow-sky"
+              className="flex w-full items-center justify-center gap-2.5 rounded-full bg-orange-700 px-6 py-3 text-sm font-black uppercase tracking-wide text-stone-900 shadow-orange"
             >
               <PlayIcon className="h-4 w-4" /> Watch Live
             </a>
@@ -197,11 +197,11 @@ export default function Navbar() {
               href={waLink('Hello Grace Cathedral!')}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2.5 rounded-full border-2 border-white/25 px-6 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:border-sky-400 hover:text-sky-300"
+              className="flex w-full items-center justify-center gap-2.5 rounded-full border-2 border-white/25 px-6 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:border-orange-400 hover:text-orange-300"
             >
               <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
             </a>
-            <p className="pt-2 text-center text-xs leading-relaxed text-blue-200/70">
+            <p className="pt-2 text-center text-xs leading-relaxed text-stone-200/70">
               Sundays 8:00 AM &amp; 10:30 AM
               <br />
               Wednesdays 6:00 PM · Fridays 5:30 PM (Youth)

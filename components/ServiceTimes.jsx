@@ -46,15 +46,15 @@ const services = [
 
 export default function ServiceTimes() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-blue-900 via-blue-950 to-blue-900 py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-stone-900 py-24 lg:py-28">
       {/* decorative glows */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -left-40 top-0 h-[420px] w-[420px] rounded-full bg-sky-400/10 blur-3xl"
+        className="pointer-events-none absolute -left-40 top-0 h-[420px] w-[420px] rounded-full bg-orange-400/10 blur-3xl"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-blue-500/20 blur-3xl"
+        className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-stone-500/20 blur-3xl"
       />
 
       <div className="container-site relative">
@@ -68,25 +68,18 @@ export default function ServiceTimes() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, i) => (
             <FadeIn key={service.name} delay={i * 120} className="h-full">
-              <article className="card group relative h-full overflow-hidden p-7 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                <span
-                  aria-hidden
-                  className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-sky-300 via-sky-500 to-sky-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                />
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-700 ring-1 ring-blue-100 transition-colors duration-300 group-hover:bg-blue-700 group-hover:text-sky-300">
-                  <service.Icon className="h-7 w-7" />
-                </div>
-                <p className="mt-5 text-[11px] font-black uppercase tracking-[0.28em] text-sky-700">
+              <article className="card group relative h-full overflow-hidden p-7 text-center transition-all duration-300 hover:shadow-xl">
+                <p className="mt-1 text-[11px] font-black uppercase tracking-[0.28em] text-orange-700">
                   {service.day}
                 </p>
-                <h3 className="mt-1.5 font-sans text-xl font-bold leading-snug text-blue-900">
+                <h3 className="mt-1.5 font-sans text-xl font-bold leading-snug text-stone-900">
                   {service.name}
                 </h3>
-                <p className="mt-3 font-sans text-[2rem] font-black leading-none text-blue-800">
+                <p className="mt-3 font-sans text-[2rem] font-black leading-none text-stone-800">
                   {service.time}
                 </p>
                 <p className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-slate-500">
-                  <MapPinIcon className="h-3.5 w-3.5 text-sky-600" />
+                  <MapPinIcon className="h-3.5 w-3.5 text-orange-600" />
                   {service.location}
                 </p>
                 <p className="mt-3 text-[13px] leading-relaxed text-slate-500">
@@ -98,11 +91,11 @@ export default function ServiceTimes() {
         </div>
 
         <FadeIn delay={200}>
-          <p className="mt-12 text-center text-sm text-blue-100/80">
+          <p className="mt-12 text-center text-sm text-stone-100/80">
             New here?{' '}
             <a
               href="#contact"
-              className="inline-flex items-center gap-1.5 font-bold text-sky-300 underline decoration-sky-500/40 underline-offset-4 transition hover:text-sky-200 hover:decoration-sky-400"
+              className="inline-flex items-center gap-1.5 font-bold text-orange-300 underline decoration-orange-500/40 underline-offset-4 transition hover:text-orange-200 hover:decoration-orange-400"
             >
               Plan your visit <ArrowRightIcon className="h-4 w-4" />
             </a>{' '}
