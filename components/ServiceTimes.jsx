@@ -44,7 +44,10 @@ const services = [
 
 export default function ServiceTimes() {
   return (
-    <section className="relative overflow-hidden bg-zinc-900 py-24 lg:py-28">
+    <section
+      className="relative overflow-hidden bg-zinc-900 bg-cover bg-center py-24 lg:py-28"
+      style={{ backgroundImage: "linear-gradient(rgba(24,24,27,.78), rgba(24,24,27,.88)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1800&q=85')" }}
+    >
       {/* decorative glows */}
       <div
         aria-hidden

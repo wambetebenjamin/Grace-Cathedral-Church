@@ -26,8 +26,8 @@ export default function Welcome() {
         {/* Pastor photo */}
         <FadeIn className="relative mx-auto w-full max-w-sm">
           <img
-            src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=85"
-            alt={`${site.seniorPastor.name}, Senior Pastor of Grace Cathedral Church, Nairobi`}
+            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=85"
+            alt="Grace Cathedral Church interior in Nairobi"
             className="relative aspect-square w-full rounded-xl object-cover object-[50%_30%] shadow-sm"
           />
           <div className="absolute -bottom-2 left-4 whitespace-nowrap rounded-full bg-zinc-900 px-6 py-2.5 text-[11px] font-black uppercase tracking-[0.22em] text-zinc-300 shadow-sm ring-1 ring-zinc-400/50">

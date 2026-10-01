@@ -44,7 +44,8 @@ export default function Giving() {
   return (
     <section
       id="give"
-      className="relative overflow-hidden bg-zinc-900 py-24 lg:py-28"
+      className="relative overflow-hidden bg-zinc-900 bg-cover bg-center py-24 lg:py-28"
+      style={{ backgroundImage: "linear-gradient(rgba(24,24,27,.84), rgba(24,24,27,.9)), url('https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85')" }}
     >
       {/* Decorative glows */}
       <div

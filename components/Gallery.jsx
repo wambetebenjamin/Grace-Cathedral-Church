@@ -13,16 +13,16 @@ import {
 const IMAGES = [
   { src: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85', caption: 'Sunday Worship', ratio: 'aspect-[4/5]' },
   { src: 'https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1200&q=85', caption: "Men's Fellowship", ratio: 'aspect-[3/4]' },
-  { src: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=85', caption: 'The Cathedral Choir', ratio: 'aspect-[4/3]' },
-  { src: 'https://images.unsplash.com/photo-1490730141103-6cac27c604b4?auto=format&fit=crop&w=1200&q=85', caption: 'The Word', ratio: 'aspect-[4/3]' },
-  { src: 'https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=85', caption: 'Grace Kids', ratio: 'aspect-[4/3]' },
-  { src: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1200&q=85', caption: 'Baptism Sundays', ratio: 'aspect-[3/4]' },
-  { src: 'https://images.unsplash.com/photo-1504159506876-f8338247a14a?auto=format&fit=crop&w=1200&q=85', caption: 'Youth Ignite', ratio: 'aspect-[4/3]' },
-  { src: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85', caption: 'Our House', ratio: 'aspect-[3/4]' },
-  { src: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=85', caption: 'Women of Grace', ratio: 'aspect-square' },
-  { src: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=85', caption: 'Feed the City', ratio: 'aspect-[3/4]' },
-  { src: 'https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=85', caption: 'At The Table', ratio: 'aspect-[4/5]' },
-  { src: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85', caption: 'Night of Worship', ratio: 'aspect-[3/4]' },
+  { src: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85', caption: 'The Cathedral Choir', ratio: 'aspect-[4/3]' },
+  { src: 'https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1200&q=85', caption: 'The Word', ratio: 'aspect-[4/3]' },
+  { src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85', caption: 'Grace Kids', ratio: 'aspect-[4/3]' },
+  { src: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85', caption: 'Baptism Sundays', ratio: 'aspect-[3/4]' },
+  { src: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=85', caption: 'Youth Ignite', ratio: 'aspect-[4/3]' },
+  { src: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85', caption: 'Our House', ratio: 'aspect-[3/4]' },
+  { src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85', caption: 'Women of Grace', ratio: 'aspect-square' },
+  { src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=85', caption: 'Feed the City', ratio: 'aspect-[3/4]' },
+  { src: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=85', caption: 'At The Table', ratio: 'aspect-[4/5]' },
+  { src: 'https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=85', caption: 'Night of Worship', ratio: 'aspect-[3/4]' },
 ];
 
 export default function Gallery() {
