@@ -42,7 +42,7 @@ export default function Welcome() {
             sizes="(max-width: 1024px) 88vw, 420px"
             className="relative aspect-square w-full rounded-full object-cover object-[50%_30%] shadow-soft"
           />
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-royal-900 px-6 py-2.5 text-[11px] font-black uppercase tracking-[0.22em] text-gold-300 shadow-soft ring-1 ring-gold-400/50">
+          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-royal-700 px-6 py-2.5 text-[11px] font-black uppercase tracking-[0.22em] text-gold-300 shadow-soft ring-1 ring-gold-400/50">
             {site.seniorPastor.role}
           </div>
         </FadeIn>

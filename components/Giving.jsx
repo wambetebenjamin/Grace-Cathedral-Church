@@ -45,7 +45,7 @@ export default function Giving() {
   return (
     <section
       id="give"
-      className="relative overflow-hidden bg-gradient-to-b from-royal-950 via-royal-900 to-royal-950 py-24 lg:py-28"
+      className="relative overflow-hidden bg-gradient-to-b from-royal-700 via-royal-800 to-royal-700 py-24 lg:py-28"
     >
       {/* Decorative glows */}
       <div
@@ -88,7 +88,7 @@ export default function Giving() {
 
           {/* M-Pesa card */}
           <FadeIn delay={140}>
-            <div className="mt-12 rounded-3xl border border-gold-400/25 bg-white/[0.06] p-8 shadow-soft backdrop-blur sm:p-10">
+            <div className="mt-12 rounded-3xl border border-gold-400/25 bg-white/10 p-8 shadow-soft backdrop-blur sm:p-10">
               <p className="text-center text-[11px] font-black uppercase tracking-[0.3em] text-gold-300">
                 M-Pesa Paybill
               </p>
@@ -173,7 +173,7 @@ export default function Giving() {
           aria-label="Ways to give"
         >
           <div
-            className="absolute inset-0 bg-royal-950/80 backdrop-blur-sm"
+            className="absolute inset-0 bg-royal-900/80 backdrop-blur-sm"
             onClick={() => setShowWays(false)}
           />
           <div className="relative max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-3xl bg-white p-8 shadow-2xl sm:p-10">

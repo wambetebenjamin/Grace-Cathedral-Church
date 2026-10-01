@@ -79,7 +79,7 @@ export default function Events() {
                       <FadeIn delay={i * 100}>
                         <div className="relative flex gap-5 sm:gap-7">
                           {/* Date badge */}
-                          <div className="relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-royal-800 to-royal-950 shadow-soft ring-2 ring-gold-400/80">
+                          <div className="relative z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-royal-600 to-royal-800 shadow-soft ring-2 ring-gold-400/80">
                             <span className="font-heading text-2xl font-black leading-none text-gold-400">
                               {day}
                             </span>

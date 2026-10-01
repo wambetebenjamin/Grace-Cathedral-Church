@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-royal-900 to-royal-950 px-6 text-center">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-royal-700 to-royal-900 px-6 text-center">
       <p className="font-heading text-7xl font-black text-gold-400 sm:text-8xl">404</p>
       <h1 className="mt-4 font-heading text-2xl font-black text-white sm:text-3xl">
         This page seems to have wandered off.

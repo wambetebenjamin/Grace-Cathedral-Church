@@ -55,7 +55,7 @@ export default function Navbar() {
         >
           {/* Logo */}
           <a href="#home" className="group flex items-center gap-3" aria-label="Grace Cathedral Church — home">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-royal-700 to-royal-950 shadow-soft transition-transform duration-300 group-hover:scale-105">
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-royal-500 to-royal-700 shadow-soft transition-transform duration-300 group-hover:scale-105">
               <CrossIcon className="h-6 w-6 text-gold-400" strokeWidth={2.2} />
             </span>
             <span className="leading-tight">
@@ -125,13 +125,13 @@ export default function Navbar() {
         aria-hidden={!open}
       >
         <div
-          className={`absolute inset-0 bg-royal-950/60 backdrop-blur-sm transition-opacity duration-300 ${
+          className={`absolute inset-0 bg-royal-900/60 backdrop-blur-sm transition-opacity duration-300 ${
             open ? 'opacity-100' : 'opacity-0'
           }`}
           onClick={() => setOpen(false)}
         />
         <aside
-          className={`absolute right-0 top-0 flex h-full w-[86%] max-w-sm flex-col overflow-y-auto bg-gradient-to-b from-royal-900 via-royal-950 to-royal-950 shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          className={`absolute right-0 top-0 flex h-full w-[86%] max-w-sm flex-col overflow-y-auto bg-gradient-to-b from-royal-700 via-royal-800 to-royal-800 shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
             open ? 'translate-x-0' : 'translate-x-full'
           }`}
           role="dialog"

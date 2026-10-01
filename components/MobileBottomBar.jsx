@@ -13,7 +13,7 @@ export default function MobileBottomBar() {
   return (
     <nav
       aria-label="Quick actions"
-      className="fixed inset-x-0 bottom-0 z-[75] grid grid-cols-4 border-t border-gold-400/20 bg-royal-950/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_30px_rgba(32,1,56,0.35)] backdrop-blur md:hidden"
+      className="fixed inset-x-0 bottom-0 z-[75] grid grid-cols-4 border-t border-gold-400/20 bg-royal-800/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_30px_rgba(61,1,106,0.35)] backdrop-blur md:hidden"
     >
       {actions.map(({ label, href, Icon, external }) => (
         <a

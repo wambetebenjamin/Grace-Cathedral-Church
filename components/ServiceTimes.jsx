@@ -46,7 +46,7 @@ const services = [
 
 export default function ServiceTimes() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-royal-900 via-royal-950 to-royal-900 py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-gradient-to-b from-royal-700 via-royal-800 to-royal-700 py-24 lg:py-28">
       {/* decorative glows */}
       <div
         aria-hidden

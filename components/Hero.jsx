@@ -46,7 +46,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-royal-950"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-royal-900"
       style={{ minHeight: '100svh' }}
     >
       {/* Preload the hero image (hoisted into <head> by React Float) */}
@@ -66,17 +66,17 @@ export default function Hero() {
       {/* Overlay gradient */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-b from-royal-950/85 via-royal-900/50 to-royal-950/95"
+        className="absolute inset-0 bg-gradient-to-b from-royal-900/85 via-royal-800/45 to-royal-900/90"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(75%_55%_at_50%_42%,transparent,rgba(32,1,56,0.6))]"
+        className="absolute inset-0 bg-[radial-gradient(75%_55%_at_50%_42%,transparent,rgba(61,1,106,0.55))]"
       />
 
       {/* Content */}
       <div className="container-site relative z-10 pb-28 pt-20 text-center sm:pb-32">
         <p
-          className="hero-anim mx-auto mb-7 inline-flex max-w-full items-center gap-2.5 rounded-full border border-gold-400/40 bg-royal-950/40 px-5 py-2 text-[10px] font-bold uppercase tracking-[0.3em] text-gold-300 backdrop-blur sm:text-[11px]"
+          className="hero-anim mx-auto mb-7 inline-flex max-w-full items-center gap-2.5 rounded-full border border-gold-400/40 bg-royal-900/40 px-5 py-2 text-[10px] font-bold uppercase tracking-[0.3em] text-gold-300 backdrop-blur sm:text-[11px]"
           style={{ animationDelay: '0.1s' }}
         >
           <SparklesIcon className="h-3.5 w-3.5 shrink-0" />
@@ -149,7 +149,7 @@ export default function Hero() {
 
       {/* Service times strip */}
       <div
-        className="hero-anim absolute inset-x-0 bottom-0 z-10 border-t border-white/10 bg-royal-950/60 backdrop-blur"
+        className="hero-anim absolute inset-x-0 bottom-0 z-10 border-t border-white/10 bg-royal-900/60 backdrop-blur"
         style={{ animationDelay: '1.8s' }}
       >
         <div className="container-site flex flex-wrap items-center justify-center gap-x-4 gap-y-1 py-3.5 text-center text-[12px] font-semibold tracking-wide text-purple-100/85 sm:text-[13px]">

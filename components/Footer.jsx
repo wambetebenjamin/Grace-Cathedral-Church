@@ -53,7 +53,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-royal-950 text-purple-100/80">
+    <footer className="relative overflow-hidden bg-royal-800 text-purple-100/80">
       <div
         aria-hidden
         className="pointer-events-none absolute -top-32 left-1/2 h-64 w-[720px] -translate-x-1/2 rounded-full bg-gold-400/5 blur-3xl"
