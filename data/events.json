@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "id": "night-of-worship",
+      "name": "Night of Worship & Prayer",
+      "date": "2026-10-09",
+      "time": "6:00 PM – 8:30 PM",
+      "location": "Main Sanctuary",
+      "tag": "Worship",
+      "description": "An evening of uninterrupted worship, testimony and seeking God's face together as one family. Come expectant."
+    },
+    {
+      "id": "youth-ignite-2026",
+      "name": "Youth Ignite Conference",
+      "date": "2026-10-17",
+      "time": "9:00 AM – 4:00 PM",
+      "location": "Cathedral Hall",
+      "tag": "Youth",
+      "description": "A one-day explosion of worship, the Word, games and real talk for teens and young adults. Bring a friend — entry is free."
+    },
+    {
+      "id": "marriage-family-dinner",
+      "name": "Marriage & Family Enrichment Dinner",
+      "date": "2026-10-24",
+      "time": "4:00 PM – 7:00 PM",
+      "location": "Grace Gardens",
+      "tag": "Family",
+      "description": "An intimate evening of fine food, teaching and honest Q&A for couples, hosted by Rev. Dr. Samuel & Mary Kariuki."
+    },
+    {
+      "id": "feed-the-city",
+      "name": "Feed the City — Community Outreach",
+      "date": "2026-11-07",
+      "time": "8:00 AM – 1:00 PM",
+      "location": "Nairobi CBD & Eastlands",
+      "tag": "Outreach",
+      "description": "Join 300 volunteers sharing hot meals, clothing and the love of Christ with our city. Sign up as a family or small group."
+    },
+    {
+      "id": "glory-christmas-cantata",
+      "name": "Glory — The Christmas Cantata",
+      "date": "2026-12-13",
+      "time": "5:00 PM – 7:00 PM",
+      "location": "Main Sanctuary",
+      "tag": "Christmas",
+      "description": "Our choir and worship team present the story of Christmas in song, drama and pageantry. Admission is free — arrive early."
+    }
+  ]
+}
